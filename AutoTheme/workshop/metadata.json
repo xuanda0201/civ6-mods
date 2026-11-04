@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "AutoTheme",
+  "version": "0.2.0",
+  "title": "巨作一键整理 / Auto Theme [Preview]",
+  "author": "xuanda0201",
+  "visibility": "private",
+  "tags": [
+    "UI",
+    "Gameplay"
+  ],
+  "contentPath": "content",
+  "entryPoint": "AutoTheme.modinfo",
+  "preview": "preview.png",
+  "descriptionChinese": "description.zh-CN.bbcode",
+  "descriptionEnglish": "description.en-US.bbcode",
+  "publishedFileId": null,
+  "workshopUrl": null,
+  "requiredWorkshopItems": [],
+  "status": "prepared-not-uploaded",
+  "inGameVerified": false,
+  "verification": {
+    "gameVersion": null,
+    "dlc": [],
+    "hdVersion": null,
+    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+  },
+  "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
+  "cover": {
+    "title": "巨作一键整理",
+    "english": "Auto Theme",
+    "accent": "#CBACDF",
+    "kicker": "GREAT WORKS",
+    "strapline": "全槽位读取 · 优先组合主题",
+    "sequence": "04"
+  },
+  "repositorySourcePath": "../src/AutoTheme"
+}

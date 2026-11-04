@@ -3,7 +3,7 @@
   <Properties>
     <Name>建造者自动作业 / Builder Auto</Name>
     <Description>逐个建造者开关：修复、开发资源、改良工作地块。遇敌暂停，手动操作接管。</Description>
-    <Authors>xuan</Authors>
+    <Authors>xuanda0201</Authors>
     <AffectsSavedGames>1</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -25,5 +25,6 @@
     <File>BuilderAuto_State.lua</File><File>BuilderAuto_Common.lua</File>
     <File>BuilderAuto_Rules.lua</File><File>BuilderAuto.lua</File>
     <File>BuilderAuto.xml</File><File>Text.xml</File>
+    <File>LICENSE.txt</File>
   </Files>
 </Mod>

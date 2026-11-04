@@ -2,6 +2,8 @@
 
 每个 Mod 使用独立项目目录，源码、说明和安装包均放在自己的目录中。
 
+工坊上传：[Windows 上传准备包](bundles/steam-workshop-upload-kit.zip) · [逐步上传说明](WORKSHOP.md)。材料已准备，尚未上传或公开工坊条目。
+
 直接试玩：[下载四合一安装包](bundles/civ6-mods-preview.zip) · [Steam 版安装步骤](INSTALL.md)。当前均为尚未实机验证的预览版。
 
 | Mod | 功能 | 说明 | 安装包 |
@@ -36,3 +38,5 @@ civ6/
 ```
 
 安装游戏 Mod 时使用安装包内的 Mod 文件夹，或项目 `src/` 下的 Mod 文件夹。
+
+自行编写的代码及封面使用 [MIT 许可证](LICENSE)，参考资料与署名见 [CREDITS.md](CREDITS.md)。

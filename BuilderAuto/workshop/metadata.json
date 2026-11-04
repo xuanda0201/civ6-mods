@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "BuilderAuto",
+  "version": "0.1.0",
+  "title": "建造者自动作业 / Builder Auto [Preview]",
+  "author": "xuanda0201",
+  "visibility": "private",
+  "tags": [
+    "UI",
+    "Gameplay"
+  ],
+  "contentPath": "content",
+  "entryPoint": "BuilderAuto.modinfo",
+  "preview": "preview.png",
+  "descriptionChinese": "description.zh-CN.bbcode",
+  "descriptionEnglish": "description.en-US.bbcode",
+  "publishedFileId": null,
+  "workshopUrl": null,
+  "requiredWorkshopItems": [],
+  "status": "prepared-not-uploaded",
+  "inGameVerified": false,
+  "verification": {
+    "gameVersion": null,
+    "dlc": [],
+    "hdVersion": null,
+    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+  },
+  "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
+  "cover": {
+    "title": "建造者自动作业",
+    "english": "Builder Auto",
+    "accent": "#7FC7AB",
+    "kicker": "BUILDER TASKS",
+    "strapline": "修复优先 · 资源开发 · 保留地貌",
+    "sequence": "03"
+  },
+  "repositorySourcePath": "../src/BuilderAuto"
+}

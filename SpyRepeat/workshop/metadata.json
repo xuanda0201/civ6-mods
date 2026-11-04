@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "SpyRepeat",
+  "version": "0.1.0",
+  "title": "间谍任务循环 / Spy Repeat [Preview]",
+  "author": "xuanda0201",
+  "visibility": "private",
+  "tags": [
+    "UI",
+    "Gameplay"
+  ],
+  "contentPath": "content",
+  "entryPoint": "SpyRepeat.modinfo",
+  "preview": "preview.png",
+  "descriptionChinese": "description.zh-CN.bbcode",
+  "descriptionEnglish": "description.en-US.bbcode",
+  "publishedFileId": null,
+  "workshopUrl": null,
+  "requiredWorkshopItems": [],
+  "status": "prepared-not-uploaded",
+  "inGameVerified": false,
+  "verification": {
+    "gameVersion": null,
+    "dlc": [],
+    "hdVersion": null,
+    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+  },
+  "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
+  "cover": {
+    "title": "间谍任务循环",
+    "english": "Spy Repeat",
+    "accent": "#89B9D9",
+    "kicker": "SPY MISSIONS",
+    "strapline": "任务重复 · 异常暂停 · 手动恢复",
+    "sequence": "02"
+  },
+  "repositorySourcePath": "../src/SpyRepeat"
+}

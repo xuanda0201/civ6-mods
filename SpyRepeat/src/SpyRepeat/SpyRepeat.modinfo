@@ -3,7 +3,7 @@
   <Properties>
     <Name>间谍任务循环 / Spy Repeat</Name>
     <Description>每名间谍独立开关，重复指定任务。晋升、调动、逃跑或目标失效时暂停。</Description>
-    <Authors>xuan</Authors>
+    <Authors>xuanda0201</Authors>
     <AffectsSavedGames>1</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -25,5 +25,6 @@
     <File>SpyRepeat.lua</File>
     <File>SpyRepeat.xml</File>
     <File>Text.xml</File>
+    <File>LICENSE.txt</File>
   </Files>
 </Mod>

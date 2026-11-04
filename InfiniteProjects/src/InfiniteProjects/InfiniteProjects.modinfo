@@ -3,7 +3,7 @@
   <Properties>
     <Name>无限循环项目 / Infinite Projects</Name>
     <Description>为每座城市独立开启当前项目无限续建。支持读取模组项目；手动生产优先。</Description>
-    <Authors>xuan</Authors>
+    <Authors>xuanda0201</Authors>
     <AffectsSavedGames>1</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
@@ -26,5 +26,6 @@
     <File>InfiniteProjects.lua</File>
     <File>InfiniteProjects.xml</File>
     <File>Text.xml</File>
+    <File>LICENSE.txt</File>
   </Files>
 </Mod>

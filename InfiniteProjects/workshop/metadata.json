@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "InfiniteProjects",
+  "version": "0.1.0",
+  "title": "无限循环项目 / Infinite Projects [Preview]",
+  "author": "xuanda0201",
+  "visibility": "private",
+  "tags": [
+    "UI",
+    "Gameplay"
+  ],
+  "contentPath": "content",
+  "entryPoint": "InfiniteProjects.modinfo",
+  "preview": "preview.png",
+  "descriptionChinese": "description.zh-CN.bbcode",
+  "descriptionEnglish": "description.en-US.bbcode",
+  "publishedFileId": null,
+  "workshopUrl": null,
+  "requiredWorkshopItems": [],
+  "status": "prepared-not-uploaded",
+  "inGameVerified": false,
+  "verification": {
+    "gameVersion": null,
+    "dlc": [],
+    "hdVersion": null,
+    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+  },
+  "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
+  "cover": {
+    "title": "无限循环项目",
+    "english": "Infinite Projects",
+    "accent": "#D8B97B",
+    "kicker": "CITY PROJECTS",
+    "strapline": "逐城开关 · 队列空闲时续建",
+    "sequence": "01"
+  },
+  "repositorySourcePath": "../src/InfiniteProjects"
+}

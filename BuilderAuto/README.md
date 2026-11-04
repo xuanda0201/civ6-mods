@@ -69,3 +69,7 @@
 - [HD 丘陵农场检查](https://github.com/XHH-Coco/Civ6HarmonyInDiversity/blob/master/UI/Additions/FarmsOnFreshHills_Common.lua)
 - [CQUI 的原生移动及建造调用](https://github.com/Azurency/CQUI_Community-Edition/blob/master/Assets/UI/worldinput.lua)
 - [ImprovementBuilder 接口的脚本/UI 可用范围](https://sukritact.github.io/Civilization-VI-Modding-Knowledge-Base/ImprovementBuilder)
+
+## 工坊发布材料
+
+`workshop/` 包含封面、中英文介绍、实机截图清单和准备元数据；当前尚未上传工坊、未完成实机验证。Windows 上传步骤见仓库根目录 `WORKSHOP.md`，上传时使用对应 `src/` 下的 `.modinfo`。代码和原创封面使用 MIT 许可证，安装内容中的 `LICENSE.txt` 随包分发。

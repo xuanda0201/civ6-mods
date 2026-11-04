@@ -82,3 +82,7 @@
 - [原游戏巨作界面与移动指令](https://github.com/chaorace/Civ6-UIFiles/blob/master/GreatWorksOverview.lua)
 - [和而不同本体](https://github.com/XHH-Coco/Civ6HarmonyInDiversity)
 - [和而不同行业与公司扩展](https://github.com/XHH-Coco/HD_CorporationsDiversity)，特别是 `Database/database.sql`、`Database/database_Theming.sql`、`Wonders/HD_PORCELAIN_Adapt.sql`。
+
+## 工坊发布材料
+
+`workshop/` 包含封面、中英文介绍、实机截图清单和准备元数据；当前尚未上传工坊、未完成实机验证。Windows 上传步骤见仓库根目录 `WORKSHOP.md`，上传时使用对应 `src/` 下的 `.modinfo`。代码和原创封面使用 MIT 许可证，安装内容中的 `LICENSE.txt` 随包分发。
