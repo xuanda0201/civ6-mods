@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "YangGuangRework",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "title": "杨广·通济四海 / Yang Guang: Four Seas [Preview]",
   "author": "xuanda0201",
   "visibility": "private",
@@ -27,7 +27,7 @@
     "gameVersion": null,
     "dlc": [],
     "hdVersion": null,
-    "notes": "Temporary upstream SQL and Lua simulation; v0.1.2 balance delta checked against v0.1.1, with source definitions and all other leader modifiers preserved. No real-game verification."
+    "notes": "v0.1.3 temporary SQL/Lua checks: waterworks-only production, Qin/Hapi modifier removal, floodplain improvement conditions, new-city Builder reward with duplicate/reentrant/load/capture guards, unchanged fleet. No real-game verification."
   },
   "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
   "cover": {
@@ -45,7 +45,7 @@
     "vanillaGatheringStorm": "unverified",
     "hd22": "unverified",
     "otherHDVersions": "unverified",
-    "notes": "Independent new leader; original Yang Guang unchanged. Requires both Phantagonist mods, HD, GS and Rulers of the Sahara. Not verified in-game.",
+    "notes": "Independent new leader; original Yang Guang unchanged. Requires both Phantagonist mods, HD, GS and their dependencies. Native city reward and floodplain yields not verified in-game.",
     "otherRulesets": "unsupported; actions restricted to RULESET_EXPANSION_2"
   }
 }

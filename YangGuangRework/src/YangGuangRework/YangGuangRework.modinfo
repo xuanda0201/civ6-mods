@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Mod id="8df6ab90-6160-4bb3-882e-0a310ca610a7" version="3">
+<Mod id="8df6ab90-6160-4bb3-882e-0a310ca610a7" version="4">
   <Properties>
     <Name>杨广·通济四海 / Yang Guang: Four Seas</Name>
     <Description>独立领袖：保留原杨广，新增水利、贸易与中世纪水师版本。</Description>
@@ -15,7 +15,6 @@
     <Mod id="3f96311d-1c8e-4201-bdc9-4061cf76c511" title="Phantagonist Yang Guang" />
     <Mod id="4c4a883e-21a5-46af-99b3-ae018d7e0a3e" title="Chinese Dynasty Uniques" />
     <Mod id="521b8777-0977-4859-a5ee-3e411a732e5c" title="Harmony in Diversity" />
-    <Mod id="82AE6F24-930F-4640-833C-FCDFD4845757" title="Rulers of the Sahara" />
   </Dependencies>
   <ActionCriteria>
     <Criteria id="GS">
@@ -88,6 +87,9 @@
     <AddGameplayScripts id="XGYG_Fleet" criteria="GS">
       <File>YangGuangRework.lua</File>
     </AddGameplayScripts>
+    <AddGameplayScripts id="XGYG_Founding" criteria="GS">
+      <File>YangGuangRework_Founding.lua</File>
+    </AddGameplayScripts>
   </InGameActions>
   <Files>
     <File>Rework.sql</File>
@@ -100,5 +102,6 @@
     <File>ArtDefs/FallbackLeaders.artdef</File>
     <File>YangGuangRework.dep</File>
     <File>LICENSE.txt</File>
+    <File>YangGuangRework_Founding.lua</File>
   </Files>
 </Mod>
