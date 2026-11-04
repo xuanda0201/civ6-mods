@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GameData>
+  <LocalizedText>
+    <Row Tag="LOC_BA_TITLE" Language="zh_Hans_CN">
+      <Text>建造者自动作业</Text>
+    </Row>
+    <Row Tag="LOC_BA_TITLE" Language="en_US">
+      <Text>Builder Auto</Text>
+    </Row>
+    <Row Tag="LOC_BA_HELP" Language="zh_Hans_CN">
+      <Text>优先修复、开发资源，再改良工作地块。禁止砍树和覆盖设施；遇敌暂停，手动下令接管。</Text>
+    </Row>
+    <Row Tag="LOC_BA_HELP" Language="en_US">
+      <Text>Repairs, resources, then worked tiles. No clearing or replacements. Pauses for danger or manual orders.</Text>
+    </Row>
+    <Row Tag="LOC_BA_CHARGES" Language="zh_Hans_CN">
+      <Text>剩余 {1_Number} 次</Text>
+    </Row>
+    <Row Tag="LOC_BA_CHARGES" Language="en_US">
+      <Text>{1_Number} charges left</Text>
+    </Row>
+    <Row Tag="LOC_BA_ENABLE" Language="zh_Hans_CN">
+      <Text>开启 / 恢复自动作业</Text>
+    </Row>
+    <Row Tag="LOC_BA_ENABLE" Language="en_US">
+      <Text>Enable / resume automation</Text>
+    </Row>
+    <Row Tag="LOC_BA_DISABLE" Language="zh_Hans_CN">
+      <Text>关闭自动作业</Text>
+    </Row>
+    <Row Tag="LOC_BA_DISABLE" Language="en_US">
+      <Text>Disable automation</Text>
+    </Row>
+    <Row Tag="LOC_BA_NO_BUILDERS" Language="zh_Hans_CN">
+      <Text>当前没有可管理的建造者</Text>
+    </Row>
+    <Row Tag="LOC_BA_NO_BUILDERS" Language="en_US">
+      <Text>No builders to manage</Text>
+    </Row>
+    <Row Tag="LOC_BA_RUNNING" Language="zh_Hans_CN">
+      <Text>自动作业已开启</Text>
+    </Row>
+    <Row Tag="LOC_BA_RUNNING" Language="en_US">
+      <Text>Automation enabled</Text>
+    </Row>
+    <Row Tag="LOC_BA_OFF" Language="zh_Hans_CN">
+      <Text>已关闭，不再派发新指令</Text>
+    </Row>
+    <Row Tag="LOC_BA_OFF" Language="en_US">
+      <Text>Off; no new orders will be sent</Text>
+    </Row>
+    <Row Tag="LOC_BA_SAVING" Language="zh_Hans_CN">
+      <Text>正在保存设置…</Text>
+    </Row>
+    <Row Tag="LOC_BA_SAVING" Language="en_US">
+      <Text>Saving setting…</Text>
+    </Row>
+    <Row Tag="LOC_BA_WAIT_MOVES" Language="zh_Hans_CN">
+      <Text>等待下回合恢复行动力</Text>
+    </Row>
+    <Row Tag="LOC_BA_WAIT_MOVES" Language="en_US">
+      <Text>Waiting for movement points</Text>
+    </Row>
+    <Row Tag="LOC_BA_WAIT_TURN" Language="zh_Hans_CN">
+      <Text>本次指令已提交，等待状态更新或下回合</Text>
+    </Row>
+    <Row Tag="LOC_BA_WAIT_TURN" Language="en_US">
+      <Text>Order already submitted; waiting for state change or next turn</Text>
+    </Row>
+    <Row Tag="LOC_BA_NO_WORK" Language="zh_Hans_CN">
+      <Text>附近没有安全任务，待命中</Text>
+    </Row>
+    <Row Tag="LOC_BA_NO_WORK" Language="en_US">
+      <Text>No safe nearby jobs; standing by</Text>
+    </Row>
+    <Row Tag="LOC_BA_REPAIR" Language="zh_Hans_CN">
+      <Text>优先修复设施 / 道路</Text>
+    </Row>
+    <Row Tag="LOC_BA_REPAIR" Language="en_US">
+      <Text>Repairing an improvement / route</Text>
+    </Row>
+    <Row Tag="LOC_BA_RESOURCE" Language="zh_Hans_CN">
+      <Text>开发资源地块</Text>
+    </Row>
+    <Row Tag="LOC_BA_RESOURCE" Language="en_US">
+      <Text>Improving a resource</Text>
+    </Row>
+    <Row Tag="LOC_BA_WORKED" Language="zh_Hans_CN">
+      <Text>改良城市正在工作的地块</Text>
+    </Row>
+    <Row Tag="LOC_BA_WORKED" Language="en_US">
+      <Text>Improving a worked tile</Text>
+    </Row>
+    <Row Tag="LOC_BA_MOVING" Language="zh_Hans_CN">
+      <Text>逐格移动到作业地块</Text>
+    </Row>
+    <Row Tag="LOC_BA_MOVING" Language="en_US">
+      <Text>Moving one tile toward the job</Text>
+    </Row>
+    <Row Tag="LOC_BA_MANUAL" Language="zh_Hans_CN">
+      <Text>已暂停：手动命令接管</Text>
+    </Row>
+    <Row Tag="LOC_BA_MANUAL" Language="en_US">
+      <Text>Paused: manual order took control</Text>
+    </Row>
+    <Row Tag="LOC_BA_MANUAL_QUEUE" Language="zh_Hans_CN">
+      <Text>请先完成或取消原有移动指令</Text>
+    </Row>
+    <Row Tag="LOC_BA_MANUAL_QUEUE" Language="en_US">
+      <Text>Finish or cancel existing movement orders first</Text>
+    </Row>
+    <Row Tag="LOC_BA_DANGER" Language="zh_Hans_CN">
+      <Text>已暂停：附近发现可见敌军或敌城</Text>
+    </Row>
+    <Row Tag="LOC_BA_DANGER" Language="en_US">
+      <Text>Paused: visible enemies / hostile city nearby</Text>
+    </Row>
+    <Row Tag="LOC_BA_OUTSIDE" Language="zh_Hans_CN">
+      <Text>已暂停：请先移回自己的领土</Text>
+    </Row>
+    <Row Tag="LOC_BA_OUTSIDE" Language="en_US">
+      <Text>Paused: move back into your own territory</Text>
+    </Row>
+    <Row Tag="LOC_BA_BLOCKED" Language="zh_Hans_CN">
+      <Text>已暂停：作业受阻或指令未生效</Text>
+    </Row>
+    <Row Tag="LOC_BA_BLOCKED" Language="en_US">
+      <Text>Paused: job blocked or order had no effect</Text>
+    </Row>
+    <Row Tag="LOC_BA_BRIDGE" Language="zh_Hans_CN">
+      <Text>已暂停：游戏脚本查询接口未加载</Text>
+    </Row>
+    <Row Tag="LOC_BA_BRIDGE" Language="en_US">
+      <Text>Paused: gameplay query interface is unavailable</Text>
+    </Row>
+    <Row Tag="LOC_BA_HD_RULES" Language="zh_Hans_CN">
+      <Text>已暂停：HD 改良检查接口不匹配</Text>
+    </Row>
+    <Row Tag="LOC_BA_HD_RULES" Language="en_US">
+      <Text>Paused: HD improvement helpers are unavailable</Text>
+    </Row>
+    <Row Tag="LOC_BA_API_ERROR" Language="zh_Hans_CN">
+      <Text>已暂停：接口异常，请查看 Lua.log</Text>
+    </Row>
+    <Row Tag="LOC_BA_API_ERROR" Language="en_US">
+      <Text>Paused: API error; check Lua.log</Text>
+    </Row>
+    <Row Tag="LOC_BA_SAVE_FAILED" Language="zh_Hans_CN">
+      <Text>设置未确认，已停止派活，请重试开关</Text>
+    </Row>
+    <Row Tag="LOC_BA_SAVE_FAILED" Language="en_US">
+      <Text>Setting unconfirmed; no new orders. Retry the switch</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

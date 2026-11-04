@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="SpyRepeat">
+  <GridButton ID="OpenButton" Style="MainButton" Anchor="L,T" Offset="20,260" Size="180,36" String="LOC_SR_TITLE"/>
+  <Grid ID="Panel" Anchor="L,T" Offset="20,302" Size="430,390" Hidden="1"
+        Texture="Controls_ContainerBlue" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16" ConsumeAllMouse="1">
+    <Label Anchor="L,T" Offset="16,12" Style="FontNormal18" String="LOC_SR_TITLE"/>
+    <Button ID="CloseButton" Anchor="R,T" Offset="8,8" Style="CloseButtonLarge"/>
+    <Label Anchor="L,T" Offset="16,44" Style="FontNormal14" WrapWidth="394" String="LOC_SR_HELP"/>
+    <ScrollPanel ID="Scroll" Anchor="L,T" Offset="10,100" Size="410,274" Style="ScrollPanelWithRightBar">
+      <Stack ID="SpyStack" StackGrowth="Down" Padding="6" Size="390,auto"/>
+    </ScrollPanel>
+  </Grid>
+  <Instance Name="SpyRow">
+    <Container ID="Root" Size="390,100">
+      <Label ID="NameLabel" Anchor="L,T" Offset="6,2" Style="FontNormal16" String=""/>
+      <Label ID="MissionLabel" Anchor="L,T" Offset="6,25" Style="FontNormal14" String=""/>
+      <Label ID="StatusLabel" Anchor="L,T" Offset="6,48" Style="FontNormal14" String=""/>
+      <GridButton ID="ToggleButton" Style="MainButton" Anchor="L,B" Offset="6,0" Size="260,28" String=""/>
+      <GridButton ID="RemoveButton" Style="MainButton" Anchor="R,B" Offset="8,0" Size="100,28" String="LOC_SR_REMOVE"/>
+    </Container>
+  </Instance>
+</Context>

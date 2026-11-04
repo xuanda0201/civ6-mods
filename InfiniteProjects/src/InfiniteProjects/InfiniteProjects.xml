@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="InfiniteProjects">
+  <!-- Independent UI: never replaces HD/CQUI production panel files. -->
+  <Grid ID="ProjectPanel" Anchor="L,C" Offset="20,100" Size="290,128" Hidden="1"
+        Texture="Controls_ContainerBlue" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16" ConsumeAllMouse="1">
+    <Label ID="CityLabel" Anchor="C,T" Offset="0,10" Style="FontNormal18" String=""/>
+    <GridButton ID="ToggleButton" Style="MainButton" Anchor="C,T" Offset="0,37" Size="266,41" String=""/>
+    <Label ID="StatusLabel" Anchor="C,T" Offset="0,86" Style="FontNormal14" WrapWidth="264" String=""/>
+  </Grid>
+</Context>

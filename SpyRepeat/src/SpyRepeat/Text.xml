@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GameData>
+  <LocalizedText>
+    <Row Tag="LOC_SR_TITLE" Language="zh_Hans_CN">
+      <Text>间谍循环</Text>
+    </Row>
+    <Row Tag="LOC_SR_TITLE" Language="en_US">
+      <Text>Spy Repeat</Text>
+    </Row>
+    <Row Tag="LOC_SR_HELP" Language="zh_Hans_CN">
+      <Text>先手动派出任务，再开启循环。关闭仅停止续派；暂停后需手动恢复。</Text>
+    </Row>
+    <Row Tag="LOC_SR_HELP" Language="en_US">
+      <Text>Start a mission, then enable repeat. Disabling stops future assignments. Pauses require manual resuming.</Text>
+    </Row>
+    <Row Tag="LOC_SR_ENABLE" Language="zh_Hans_CN">
+      <Text>开启自动重复</Text>
+    </Row>
+    <Row Tag="LOC_SR_ENABLE" Language="en_US">
+      <Text>Enable repeat</Text>
+    </Row>
+    <Row Tag="LOC_SR_DISABLE" Language="zh_Hans_CN">
+      <Text>关闭自动重复</Text>
+    </Row>
+    <Row Tag="LOC_SR_DISABLE" Language="en_US">
+      <Text>Disable repeat</Text>
+    </Row>
+    <Row Tag="LOC_SR_RESUME" Language="zh_Hans_CN">
+      <Text>恢复 / 循环当前任务</Text>
+    </Row>
+    <Row Tag="LOC_SR_RESUME" Language="en_US">
+      <Text>Resume / repeat current mission</Text>
+    </Row>
+    <Row Tag="LOC_SR_REMOVE" Language="zh_Hans_CN">
+      <Text>移除记录</Text>
+    </Row>
+    <Row Tag="LOC_SR_REMOVE" Language="en_US">
+      <Text>Remove</Text>
+    </Row>
+    <Row Tag="LOC_SR_AWAY" Language="zh_Hans_CN">
+      <Text>未在地图上</Text>
+    </Row>
+    <Row Tag="LOC_SR_AWAY" Language="en_US">
+      <Text>Off map</Text>
+    </Row>
+    <Row Tag="LOC_SR_NO_MISSION" Language="zh_Hans_CN">
+      <Text>未安排任务</Text>
+    </Row>
+    <Row Tag="LOC_SR_NO_MISSION" Language="en_US">
+      <Text>No assignment</Text>
+    </Row>
+    <Row Tag="LOC_SR_NO_SPIES" Language="zh_Hans_CN">
+      <Text>当前没有可管理的间谍</Text>
+    </Row>
+    <Row Tag="LOC_SR_NO_SPIES" Language="en_US">
+      <Text>No spies to manage</Text>
+    </Row>
+    <Row Tag="LOC_SR_ASSIGN_FIRST" Language="zh_Hans_CN">
+      <Text>请先手动派出一个可重复任务</Text>
+    </Row>
+    <Row Tag="LOC_SR_ASSIGN_FIRST" Language="en_US">
+      <Text>Start a repeatable mission first</Text>
+    </Row>
+    <Row Tag="LOC_SR_RUNNING" Language="zh_Hans_CN">
+      <Text>自动重复已开启</Text>
+    </Row>
+    <Row Tag="LOC_SR_RUNNING" Language="en_US">
+      <Text>Repeat enabled</Text>
+    </Row>
+    <Row Tag="LOC_SR_REQUESTED" Language="zh_Hans_CN">
+      <Text>已请求续派</Text>
+    </Row>
+    <Row Tag="LOC_SR_REQUESTED" Language="en_US">
+      <Text>Repeat requested</Text>
+    </Row>
+    <Row Tag="LOC_SR_WAITING" Language="zh_Hans_CN">
+      <Text>等待间谍可以行动</Text>
+    </Row>
+    <Row Tag="LOC_SR_WAITING" Language="en_US">
+      <Text>Waiting for the spy to become ready</Text>
+    </Row>
+    <Row Tag="LOC_SR_SAVING" Language="zh_Hans_CN">
+      <Text>正在保存设置…</Text>
+    </Row>
+    <Row Tag="LOC_SR_SAVING" Language="en_US">
+      <Text>Saving setting…</Text>
+    </Row>
+    <Row Tag="LOC_SR_OFF" Language="zh_Hans_CN">
+      <Text>已关闭；不打断当前任务</Text>
+    </Row>
+    <Row Tag="LOC_SR_OFF" Language="en_US">
+      <Text>Off; current mission continues</Text>
+    </Row>
+    <Row Tag="LOC_SR_PROMOTION" Language="zh_Hans_CN">
+      <Text>暂停：请先处理间谍晋升</Text>
+    </Row>
+    <Row Tag="LOC_SR_PROMOTION" Language="en_US">
+      <Text>Paused: handle available promotions</Text>
+    </Row>
+    <Row Tag="LOC_SR_TARGET_CHANGED" Language="zh_Hans_CN">
+      <Text>暂停：目标城市或位置已变化</Text>
+    </Row>
+    <Row Tag="LOC_SR_TARGET_CHANGED" Language="en_US">
+      <Text>Paused: target city or location changed</Text>
+    </Row>
+    <Row Tag="LOC_SR_CHANGED" Language="zh_Hans_CN">
+      <Text>暂停：已调动或改为其他行动</Text>
+    </Row>
+    <Row Tag="LOC_SR_CHANGED" Language="en_US">
+      <Text>Paused: travel or another action started</Text>
+    </Row>
+    <Row Tag="LOC_SR_UNAVAILABLE" Language="zh_Hans_CN">
+      <Text>暂停：原任务暂时无法执行</Text>
+    </Row>
+    <Row Tag="LOC_SR_UNAVAILABLE" Language="en_US">
+      <Text>Paused: original mission is unavailable</Text>
+    </Row>
+    <Row Tag="LOC_SR_ESCAPE" Language="zh_Hans_CN">
+      <Text>暂停：请处理逃跑 / 任务结果</Text>
+    </Row>
+    <Row Tag="LOC_SR_ESCAPE" Language="en_US">
+      <Text>Paused: handle escape / mission outcome</Text>
+    </Row>
+    <Row Tag="LOC_SR_OFF_MAP" Language="zh_Hans_CN">
+      <Text>暂停：间谍离图或身份变化，请查看原间谍界面</Text>
+    </Row>
+    <Row Tag="LOC_SR_OFF_MAP" Language="en_US">
+      <Text>Paused: spy is off map or changed; check the game spy overview</Text>
+    </Row>
+    <Row Tag="LOC_SR_SAVE_FAILED" Language="zh_Hans_CN">
+      <Text>设置未确认，已停止续派；请重试开关</Text>
+    </Row>
+    <Row Tag="LOC_SR_SAVE_FAILED" Language="en_US">
+      <Text>Setting unconfirmed; repeat stopped locally. Retry the switch</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

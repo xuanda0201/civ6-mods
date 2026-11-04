@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="AutoTheme">
+  <GridButton ID="ThemeButton" Anchor="L,T" Offset="20,176" Size="180,36" Style="MainButton" String="LOC_AT_START"/>
+  <Grid ID="StatusPanel" Anchor="L,T" Offset="206,176" Size="400,78" Hidden="1"
+        Texture="Controls_ContainerBlue" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16" ConsumeAllMouse="1">
+    <Label ID="StatusLabel" Anchor="L,T" Offset="12,10" WrapWidth="370" Style="FontNormal14" String=""/>
+  </Grid>
+</Context>

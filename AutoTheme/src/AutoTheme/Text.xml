@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GameData>
+  <LocalizedText>
+    <Row Tag="LOC_AT_START" Language="zh_Hans_CN">
+      <Text>一键整理巨作</Text>
+    </Row>
+    <Row Tag="LOC_AT_START" Language="en_US">
+      <Text>Arrange Great Works</Text>
+    </Row>
+    <Row Tag="LOC_AT_CANCEL" Language="zh_Hans_CN">
+      <Text>停止整理</Text>
+    </Row>
+    <Row Tag="LOC_AT_CANCEL" Language="en_US">
+      <Text>Stop arranging</Text>
+    </Row>
+    <Row Tag="LOC_AT_HELP" Language="zh_Hans_CN">
+      <Text>整理整个巨作面板：优先组合主题，再改善产品、遗物等存放。原有主题组合保留。</Text>
+    </Row>
+    <Row Tag="LOC_AT_HELP" Language="en_US">
+      <Text>Arrange every Great Works slot: theme first, then improve storage. Preserve existing themes.</Text>
+    </Row>
+    <Row Tag="LOC_AT_PLANNING" Language="zh_Hans_CN">
+      <Text>正在规划全部巨作槽位…</Text>
+    </Row>
+    <Row Tag="LOC_AT_PLANNING" Language="en_US">
+      <Text>Planning across all Great Works slots…</Text>
+    </Row>
+    <Row Tag="LOC_AT_RUNNING" Language="zh_Hans_CN">
+      <Text>正在整理：计划主题建筑 {1_Number} 座，交换 {2_Number} 次…</Text>
+    </Row>
+    <Row Tag="LOC_AT_RUNNING" Language="en_US">
+      <Text>Arranging: {1_Number} theme targets, {2_Number} swaps…</Text>
+    </Row>
+    <Row Tag="LOC_AT_CANCELLING" Language="zh_Hans_CN">
+      <Text>正在停止，等待已提交的交换完成…</Text>
+    </Row>
+    <Row Tag="LOC_AT_CANCELLING" Language="en_US">
+      <Text>Stopping after the submitted swap…</Text>
+    </Row>
+    <Row Tag="LOC_AT_CANCELLED" Language="zh_Hans_CN">
+      <Text>已停止，已完成 {1_Number} 次交换</Text>
+    </Row>
+    <Row Tag="LOC_AT_CANCELLED" Language="en_US">
+      <Text>Stopped after {1_Number} swaps</Text>
+    </Row>
+    <Row Tag="LOC_AT_WAIT_TURN" Language="zh_Hans_CN">
+      <Text>请在自己的回合使用</Text>
+    </Row>
+    <Row Tag="LOC_AT_WAIT_TURN" Language="en_US">
+      <Text>Use this during your own turn</Text>
+    </Row>
+    <Row Tag="LOC_AT_TURN_ENDED" Language="zh_Hans_CN">
+      <Text>回合已结束，停止继续整理</Text>
+    </Row>
+    <Row Tag="LOC_AT_TURN_ENDED" Language="en_US">
+      <Text>Turn ended; no further swaps</Text>
+    </Row>
+    <Row Tag="LOC_AT_NO_COMBINATION" Language="zh_Hans_CN">
+      <Text>暂无需执行的整理：未找到新主题组合或更优存放位置</Text>
+    </Row>
+    <Row Tag="LOC_AT_NO_COMBINATION" Language="en_US">
+      <Text>No changes needed: no new theme or better supported placement found</Text>
+    </Row>
+    <Row Tag="LOC_AT_CHANGED" Language="zh_Hans_CN">
+      <Text>藏品位置或建筑已变化，停止整理；可重新点击</Text>
+    </Row>
+    <Row Tag="LOC_AT_CHANGED" Language="en_US">
+      <Text>Works or buildings changed. Stopped; click again to replan</Text>
+    </Row>
+    <Row Tag="LOC_AT_REJECTED" Language="zh_Hans_CN">
+      <Text>交换受限或未生效，已停止；请查看巨作界面</Text>
+    </Row>
+    <Row Tag="LOC_AT_REJECTED" Language="en_US">
+      <Text>Transfer restricted or unconfirmed. Stopped; check Great Works</Text>
+    </Row>
+    <Row Tag="LOC_AT_RULE_MISMATCH" Language="zh_Hans_CN">
+      <Text>整理已停止：实际主题规则与计划不一致，请查看巨作界面</Text>
+    </Row>
+    <Row Tag="LOC_AT_RULE_MISMATCH" Language="en_US">
+      <Text>Stopped: actual theming rules differ. Check Great Works</Text>
+    </Row>
+    <Row Tag="LOC_AT_DONE" Language="zh_Hans_CN">
+      <Text>完成：新增 {1_Number} 座主题建筑，共交换 {2_Number} 次</Text>
+    </Row>
+    <Row Tag="LOC_AT_DONE" Language="en_US">
+      <Text>Done: {1_Number} new themed buildings, {2_Number} swaps</Text>
+    </Row>
+    <Row Tag="LOC_AT_ERROR" Language="zh_Hans_CN">
+      <Text>接口异常，已停止整理；详情见 Lua.log</Text>
+    </Row>
+    <Row Tag="LOC_AT_ERROR" Language="en_US">
+      <Text>API error; stopped. See Lua.log</Text>
+    </Row>
+    <Row Tag="LOC_AT_DONE_PARTIAL" Language="zh_Hans_CN">
+      <Text>完成可执行部分：新增 {1_Number} 座主题建筑，交换 {2_Number} 次；{3_Number} 组未找到合法交换顺序</Text>
+    </Row>
+    <Row Tag="LOC_AT_DONE_PARTIAL" Language="en_US">
+      <Text>Completed feasible changes: {1_Number} themes, {2_Number} swaps; {3_Number} groups lacked a legal route</Text>
+    </Row>
+    <Row Tag="LOC_AT_NO_ROUTE" Language="zh_Hans_CN">
+      <Text>发现主题组合，但未找到合法交换顺序，未移动藏品</Text>
+    </Row>
+    <Row Tag="LOC_AT_NO_ROUTE" Language="en_US">
+      <Text>Theme combinations found, but no legal route. No works moved</Text>
+    </Row>
+    <Row Tag="LOC_AT_SEARCH_LIMIT" Language="zh_Hans_CN">
+      <Text>搜索达到上限，尚未找到可执行方案，未移动藏品</Text>
+    </Row>
+    <Row Tag="LOC_AT_SEARCH_LIMIT" Language="en_US">
+      <Text>Search limit reached without a feasible plan. No works moved</Text>
+    </Row>
+    <Row Tag="LOC_AT_LIMITED" Language="zh_Hans_CN">
+      <Text>本次有界整理完成：新增 {1_Number} 座主题建筑，交换 {2_Number} 次；未保证全局最优</Text>
+    </Row>
+    <Row Tag="LOC_AT_LIMITED" Language="en_US">
+      <Text>Bounded arrangement finished: {1_Number} themes, {2_Number} swaps; global optimum not guaranteed</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

@@ -1,0 +1,71 @@
+# 建造者自动作业 · Builder Auto
+
+文明 6 单机 Mod，每个建造者独立开关。与无限循环项目、间谍任务循环分别安装和启用。
+
+## 安装与使用
+
+解压 `dist/BuilderAuto-0.1.0.zip`，将其中的 `BuilderAuto` 文件夹放入游戏的 `Mods` 目录。从源码安装则复制 `src/BuilderAuto/`，不要复制包含 `src`、`dist` 的整个项目目录。
+
+- Windows：通常为 `文档\My Games\Sid Meier's Civilization VI\Mods`。
+- macOS：通常为 `~/Library/Application Support/Sid Meier's Civilization VI/Mods`。
+
+在「额外内容 → 模组」启用「建造者自动作业 / Builder Auto」，首次验证请开单机新局。尚未验证能否向旧存档后加启用 Gameplay 脚本。
+
+点击屏幕左侧的「建造者自动作业」，在列表中为需要托管的建造者开启自动作业。开关状态随游戏存档保存，默认关闭。
+
+## 工作顺序
+
+1. 修复自己领土内被劫掠的改良与道路。
+2. 开发已发现的资源，读取当前游戏数据库中资源与改良的对应关系。
+3. 改良城市正在工作的空地，在农场、矿山、伐木场中选择合法方案；产出评分参考城市的人口工作产出偏好。
+4. 没有安全任务时跳过本回合，下一回合继续检查；不会让闲置建造者每回合继续索要指令。
+
+在当前所在地周围 6 格内搜索，路线最多 3 个行进回合，整个路线都要求处于自己的可见领土。多个建造者预留不同目标。移动时只下达相邻一格的指令，每步重新检查；到达后再请求实际修复或建造，消耗由游戏正常处理。
+
+## 手动接管与边界
+
+- 关闭开关后不再派发新指令；已经提交的一步移动或作业可能继续完成。
+- 手动下达移动、建造、休眠等单位操作或命令，会暂停该建造者的自动作业。仅选中单位不会暂停。
+- 遇到附近可见敌军、敌城、接口异常或指令受阻时暂停并展开列表显示原因，需要手动恢复。避敌检查为周围两格，不包含完整的远程打击和隐藏敌军威胁预测。
+- 不砍树、不收获资源、不覆盖已有设施。地貌上的新改良必须在数据库中明确兼容该地貌；不能确认保留地貌的情况直接跳过。
+- 新建改良只选择正常可建、无特色 Trait 限制的条目；特色改良、相邻建造操作、行业/公司、植树和工程师作业保留手动。
+- 不识别尚未放置的区域、奇观规划或地图图钉。已经放置的区域/奇观地块排除在作业之外。
+- 会使用最后一次建造次数；修复是否耗次数按当前游戏规则执行。只管理建造者及其替代单位，不自动接管其他带建造次数的单位。
+- 首次开启前，如果单位已有多回合移动指令，请先完成或取消它。
+
+## 和而不同适配
+
+不替换 HD 的单位面板、改良定义或数据库。到达目标后仍通过 `CanStartOperation` 和 `RequestOperation` 检查并执行。
+
+对于远处地块，通过本 Mod 的只读 Gameplay 查询调用 `ImprovementBuilder.CanHaveImprovement`，结合科技、人文、资源和地貌规则筛选；不直接生成或修改改良。
+
+检测到 HD 的改良规则表时，加载当前安装的 `HD_Improvements`、`FarmsOnFreshHills_Common` 检查函数，应用资源地形限制、城市改良数量限制和丘陵农场规则。未复制 HD 实现，也不依赖其他两个本地 Mod。HD 接口缺失或不匹配时暂停自动作业，记录错误。
+
+**0.1.0 是待实机验证版。** 开发机没有文明 6，尚未验证游戏内 UI、真实存档或 HD 工坊当前版本兼容性。公开 HD 源码可能落后于工坊。仅支持单机，不支持热座/联机；同一个建造者不要交给其他自动化 Mod 同时管理。
+
+## 本地验证与最短试玩
+
+本地完成 Lua 语法、XML 和清单文件检查。临时 Lua 模拟实际执行了本 Mod 的规划、保存与调度源码，检查修复优先、修复不额外扣次数、动态资源映射、工作地块改良、森林保留、不覆盖设施、待命跳过回合、开关、手动接管、避敌、目标预留、迷雾排除和 UI 重载保留设置。
+
+同一临时模拟还加载了公开 HD 的实际检查函数，验证资源地形规则、城市改良数量限制和缺失数据时停止执行。上述模拟不验证游戏 API 本身或真实存档序列化；未添加测试框架或 CI。
+
+在实际使用的 HD 组合下，建议用两名建造者验证：
+
+1. 只为 A 开启自动作业，B 保持手动；准备被劫掠设施、未开发资源和正在工作的空地，确认按顺序作业。
+2. 为 B 也开启，确认不会追逐同一目标。
+3. 检查森林、资源和已有改良未被清除或覆盖。
+4. 关闭 A，或手动下达新命令，确认之后不再自动派活。
+5. 保存、退出到主菜单再读档，检查开关；没有工作时确认自动跳过回合，下回合有新任务时恢复。
+6. 验证可见敌军附近暂停，以及 HD 有数量/地形限制的改良不会绕过限制。
+
+排查时查看游戏 `Logs/Lua.log` 中的 `[BuilderAuto]` 和错误信息，加载问题另看 `Modding.log`。
+
+## 结构与接口参考
+
+`src/BuilderAuto/` 是可安装源码，`dist/` 是安装包。`BuilderAuto_Rules.lua` 负责规划及 HD 适配，`BuilderAuto.lua` 负责列表、调度与手动接管，`BuilderAuto_State.lua` 负责保存和只读地块查询。
+
+- [HD 单位面板](https://github.com/XHH-Coco/Civ6HarmonyInDiversity/blob/master/UI/Replacement/DL_UnitPanel.lua)
+- [HD 改良检查](https://github.com/XHH-Coco/Civ6HarmonyInDiversity/blob/master/UI/Additions/HD_Improvements.lua)
+- [HD 丘陵农场检查](https://github.com/XHH-Coco/Civ6HarmonyInDiversity/blob/master/UI/Additions/FarmsOnFreshHills_Common.lua)
+- [CQUI 的原生移动及建造调用](https://github.com/Azurency/CQUI_Community-Edition/blob/master/Assets/UI/worldinput.lua)
+- [ImprovementBuilder 接口的脚本/UI 可用范围](https://sukritact.github.io/Civilization-VI-Modding-Knowledge-Base/ImprovementBuilder)

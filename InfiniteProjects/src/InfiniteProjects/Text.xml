@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GameData>
+  <LocalizedText>
+    <Row Tag="LOC_IP_ENABLE" Language="zh_Hans_CN">
+      <Text>开启：循环当前项目</Text>
+    </Row>
+    <Row Tag="LOC_IP_ENABLE" Language="en_US">
+      <Text>Repeat current project</Text>
+    </Row>
+    <Row Tag="LOC_IP_DISABLE" Language="zh_Hans_CN">
+      <Text>关闭项目循环</Text>
+    </Row>
+    <Row Tag="LOC_IP_DISABLE" Language="en_US">
+      <Text>Stop repeating</Text>
+    </Row>
+    <Row Tag="LOC_IP_HELP" Language="zh_Hans_CN">
+      <Text>先安排一个可重复项目，再开启。手动队列优先，空闲时自动续建。关闭不会取消已经开始的生产。</Text>
+    </Row>
+    <Row Tag="LOC_IP_HELP" Language="en_US">
+      <Text>Start a repeatable project, then enable. Manual production takes priority. Disabling does not cancel production already started.</Text>
+    </Row>
+    <Row Tag="LOC_IP_SAVING" Language="zh_Hans_CN">
+      <Text>正在保存开关…</Text>
+    </Row>
+    <Row Tag="LOC_IP_SAVING" Language="en_US">
+      <Text>Saving setting…</Text>
+    </Row>
+    <Row Tag="LOC_IP_ENABLED" Language="zh_Hans_CN">
+      <Text>循环中：{1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_ENABLED" Language="en_US">
+      <Text>Repeating: {1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_SELECT_PROJECT" Language="zh_Hans_CN">
+      <Text>请先在生产面板安排一个项目</Text>
+    </Row>
+    <Row Tag="LOC_IP_SELECT_PROJECT" Language="en_US">
+      <Text>Start a project in the production panel first</Text>
+    </Row>
+    <Row Tag="LOC_IP_ONE_OFF" Language="zh_Hans_CN">
+      <Text>此项目有次数限制，不支持无限循环</Text>
+    </Row>
+    <Row Tag="LOC_IP_ONE_OFF" Language="en_US">
+      <Text>This project has an instance limit</Text>
+    </Row>
+    <Row Tag="LOC_IP_MANUAL_FIRST" Language="zh_Hans_CN">
+      <Text>手动队列优先，之后续建：{1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_MANUAL_FIRST" Language="en_US">
+      <Text>Manual queue first, then: {1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_UNAVAILABLE" Language="zh_Hans_CN">
+      <Text>暂不可生产，等待恢复：{1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_UNAVAILABLE" Language="en_US">
+      <Text>Paused until available: {1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_REQUESTED" Language="zh_Hans_CN">
+      <Text>已请求续建：{1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_REQUESTED" Language="en_US">
+      <Text>Requested: {1_Name}</Text>
+    </Row>
+    <Row Tag="LOC_IP_SAVE_FAILED" Language="zh_Hans_CN">
+      <Text>开关保存失败，请重新安排项目后重试</Text>
+    </Row>
+    <Row Tag="LOC_IP_SAVE_FAILED" Language="en_US">
+      <Text>Setting was not saved. Start a project and try again.</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

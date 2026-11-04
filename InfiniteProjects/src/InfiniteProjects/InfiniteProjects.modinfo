@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="631e51cc-0eb1-47d0-9710-593ca8d9c607" version="1">
+  <Properties>
+    <Name>无限循环项目 / Infinite Projects</Name>
+    <Description>为每座城市独立开启当前项目无限续建。支持读取模组项目；手动生产优先。</Description>
+    <Authors>xuan</Authors>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+  </Properties>
+  <InGameActions>
+    <AddGameplayScripts id="IP_State">
+      <File>InfiniteProjects_State.lua</File>
+    </AddGameplayScripts>
+    <AddUserInterfaces id="IP_UI">
+      <Properties><Context>InGame</Context></Properties>
+      <File>InfiniteProjects.xml</File>
+    </AddUserInterfaces>
+    <ImportFiles id="IP_Files"><File>InfiniteProjects.lua</File></ImportFiles>
+    <UpdateText id="IP_Text"><File>Text.xml</File></UpdateText>
+  </InGameActions>
+  <Files>
+    <File>InfiniteProjects_State.lua</File>
+    <File>InfiniteProjects.lua</File>
+    <File>InfiniteProjects.xml</File>
+    <File>Text.xml</File>
+  </Files>
+</Mod>

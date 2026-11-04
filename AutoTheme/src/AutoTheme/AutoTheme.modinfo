@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d908d082-9c4e-4bbb-ab01-902f1e9c493e4a8a" version="2">
+  <Properties>
+    <Name>巨作一键整理 / Auto Theme</Name>
+    <Description>整理整个巨作面板的艺术品、文物、遗物、著作、音乐、公司及奇观产品。优先主题化，再改善普通存放。</Description>
+    <Authors>xuan</Authors>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+  </Properties>
+  <InGameActions>
+    <AddUserInterfaces id="AT_UI">
+      <Properties><Context>InGame</Context><LoadOrder>20000</LoadOrder></Properties>
+      <File>AutoTheme.xml</File>
+    </AddUserInterfaces>
+    <ImportFiles id="AT_Files"><File>AutoTheme.lua</File><File>AutoTheme_Planner.lua</File><File>AutoTheme_Scoring.lua</File></ImportFiles>
+    <UpdateText id="AT_Text"><File>Text.xml</File></UpdateText>
+  </InGameActions>
+  <Files>
+    <File>AutoTheme.lua</File><File>AutoTheme_Planner.lua</File><File>AutoTheme_Scoring.lua</File><File>AutoTheme.xml</File><File>Text.xml</File>
+  </Files>
+</Mod>
