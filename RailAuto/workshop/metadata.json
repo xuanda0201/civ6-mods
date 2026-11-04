@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "name": "RailAuto",
+  "version": "0.1.0",
+  "title": "沿途自动铺铁路 / Rail Auto [Preview]",
+  "author": "xuanda0201",
+  "visibility": "private",
+  "tags": [
+    "UI",
+    "Gameplay"
+  ],
+  "contentPath": "content",
+  "entryPoint": "RailAuto.modinfo",
+  "preview": "preview.png",
+  "descriptionChinese": "description.zh-CN.bbcode",
+  "descriptionEnglish": "description.en-US.bbcode",
+  "publishedFileId": null,
+  "workshopUrl": null,
+  "requiredWorkshopItems": [],
+  "status": "prepared-not-uploaded",
+  "inGameVerified": false,
+  "verification": {
+    "gameVersion": null,
+    "dlc": [],
+    "hdVersion": null,
+    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+  },
+  "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
+  "cover": {
+    "title": "沿途自动铺铁路",
+    "english": "Rail Auto",
+    "accent": "#DBAC83",
+    "kicker": "RAILWAY CONSTRUCTION",
+    "strapline": "单位开关 · 沿途铺设 · 海面跳过",
+    "sequence": "05"
+  },
+  "repositorySourcePath": "../src/RailAuto",
+  "compatibility": {
+    "primaryRuleset": "RULESET_EXPANSION_2",
+    "hdTarget": "2.2",
+    "vanillaGatheringStorm": "unverified",
+    "hd22": "unverified",
+    "otherHDVersions": "unverified",
+    "notes": "See COMPATIBILITY.md and project README. No real-game verification.",
+    "otherRulesets": "unsupported; actions restricted to RULESET_EXPANSION_2"
+  }
+}

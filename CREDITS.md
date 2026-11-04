@@ -9,6 +9,7 @@
 - [Automated Production Queue](https://github.com/starreeze/AutomatedQueue)
 - [Harmony in Diversity](https://github.com/XHH-Coco/Civ6HarmonyInDiversity)
 - [HD Corporations Diversity](https://github.com/XHH-Coco/HD_CorporationsDiversity)
+- [CivVI API 类型资料](https://www.npmjs.com/package/civvi-types)
 - [Sukritact's Civilization VI Modding Knowledge Base](https://sukritact.github.io/Civilization-VI-Modding-Knowledge-Base/)
 
 第三方项目的名称、代码和素材仍适用各自的权利和许可证。本仓库不将参考资料链接视为第三方授权，也不打包 HD、其他 Mod、游戏素材或字体文件。封面为自行绘制的几何图形及文字，不是游戏截图，不代表 Firaxis、2K、Aspyr 或 HD 制作组的官方作品。

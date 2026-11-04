@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="RailAuto">
+  <Container ID="RailAction" Anchor="C,B" Size="112,53" Hidden="1" ConsumeMouse="1">
+    <GridButton ID="RailButton" Style="MainButton" Anchor="C,C" Size="108,44" String="LOC_RA_BUTTON_OFF"/>
+  </Container>
+</Context>

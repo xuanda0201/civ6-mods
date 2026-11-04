@@ -6,7 +6,7 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-NAMES = ("InfiniteProjects", "SpyRepeat", "BuilderAuto", "AutoTheme")
+NAMES = ("InfiniteProjects", "SpyRepeat", "BuilderAuto", "AutoTheme", "RailAuto")
 
 
 def write_zip(destination, files):
@@ -47,10 +47,12 @@ def main():
         if not (material / metadata["preview"]).is_file():
             raise FileNotFoundError(material / metadata["preview"])
     bundle.append((ROOT / "INSTALL.md", Path("INSTALL.md")))
+    bundle.append((ROOT / "COMPATIBILITY.md", Path("COMPATIBILITY.md")))
     kit.extend([(ROOT / "WORKSHOP.md", Path("UPLOAD.zh-CN.md")),
                 (ROOT / "INSTALL.md", Path("INSTALL.md")),
                 (ROOT / "LICENSE", Path("LICENSE")),
-                (ROOT / "CREDITS.md", Path("CREDITS.md"))])
+                (ROOT / "CREDITS.md", Path("CREDITS.md")),
+                (ROOT / "COMPATIBILITY.md", Path("COMPATIBILITY.md"))])
     write_zip(ROOT / "bundles" / "civ6-mods-preview.zip", bundle)
     destination = ROOT / "bundles" / "steam-workshop-upload-kit.zip"
     write_zip(destination, kit)
@@ -64,7 +66,7 @@ def main():
             for node in manifest.findall("./Files/File"):
                 if not (content / node.text).is_file():
                     raise FileNotFoundError(content / node.text)
-    print("All four extracted Workshop entry points and manifest files verified.")
+    print("All five extracted Workshop entry points and manifest files verified.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GameData>
+  <LocalizedText>
+    <Row Tag="LOC_RA_BUTTON_OFF" Language="zh_Hans_CN">
+      <Text>铺铁路：关</Text>
+    </Row>
+    <Row Tag="LOC_RA_BUTTON_OFF" Language="en_US">
+      <Text>Rail: off</Text>
+    </Row>
+    <Row Tag="LOC_RA_BUTTON_ON" Language="zh_Hans_CN">
+      <Text>铺铁路：开</Text>
+    </Row>
+    <Row Tag="LOC_RA_BUTTON_ON" Language="en_US">
+      <Text>Rail: on</Text>
+    </Row>
+    <Row Tag="LOC_RA_BUTTON_PAUSED" Language="zh_Hans_CN">
+      <Text>铺铁路：暂停</Text>
+    </Row>
+    <Row Tag="LOC_RA_BUTTON_PAUSED" Language="en_US">
+      <Text>Rail: paused</Text>
+    </Row>
+    <Row Tag="LOC_RA_HELP" Language="zh_Hans_CN">
+      <Text>开关只控制当前单位。正常移动，经过可施工的自己或无主陆地时铺铁路；海面、已有铁路和不能施工的格子跳过。资源不足停用施工，移动继续；请补充资源后手动恢复。沿途施工不额外消耗行动力。</Text>
+    </Row>
+    <Row Tag="LOC_RA_HELP" Language="en_US">
+      <Text>Only this unit. Move normally to lay rails on eligible owned/unowned land. Water and existing rails are skipped. Low resources disable construction, not movement; replenish and resume manually. Construction costs no extra movement.</Text>
+    </Row>
+    <Row Tag="LOC_RA_OFF" Language="zh_Hans_CN">
+      <Text>自动铺铁路已关闭</Text>
+    </Row>
+    <Row Tag="LOC_RA_OFF" Language="en_US">
+      <Text>Automatic rail laying is off.</Text>
+    </Row>
+    <Row Tag="LOC_RA_ON" Language="zh_Hans_CN">
+      <Text>已开启，移动时沿途铺设</Text>
+    </Row>
+    <Row Tag="LOC_RA_ON" Language="en_US">
+      <Text>Enabled; lay rails along movement.</Text>
+    </Row>
+    <Row Tag="LOC_RA_LAID" Language="zh_Hans_CN">
+      <Text>已铺设铁路，并按数据库扣除资源</Text>
+    </Row>
+    <Row Tag="LOC_RA_LAID" Language="en_US">
+      <Text>Rail laid; database resource costs deducted.</Text>
+    </Row>
+    <Row Tag="LOC_RA_EXISTING" Language="zh_Hans_CN">
+      <Text>已有铁路，跳过且不扣资源；被劫掠铁路需手动修复</Text>
+    </Row>
+    <Row Tag="LOC_RA_EXISTING" Language="en_US">
+      <Text>Existing rail skipped at no cost. Repair pillaged rail manually.</Text>
+    </Row>
+    <Row Tag="LOC_RA_SKIP" Language="zh_Hans_CN">
+      <Text>当前格不施工，移动后继续检查</Text>
+    </Row>
+    <Row Tag="LOC_RA_SKIP" Language="en_US">
+      <Text>No construction here; check again after moving.</Text>
+    </Row>
+    <Row Tag="LOC_RA_FOREIGN" Language="zh_Hans_CN">
+      <Text>他人领土不自动施工，离开后继续</Text>
+    </Row>
+    <Row Tag="LOC_RA_FOREIGN" Language="en_US">
+      <Text>Foreign territory skipped; movement continues.</Text>
+    </Row>
+    <Row Tag="LOC_RA_TECH" Language="zh_Hans_CN">
+      <Text>等待铁路所需科技解锁</Text>
+    </Row>
+    <Row Tag="LOC_RA_TECH" Language="en_US">
+      <Text>Waiting for the railroad prerequisite technology.</Text>
+    </Row>
+    <Row Tag="LOC_RA_RULES" Language="zh_Hans_CN">
+      <Text>当前铁路规则不支持，已停止施工</Text>
+    </Row>
+    <Row Tag="LOC_RA_RULES" Language="en_US">
+      <Text>Unsupported railroad rules; construction disabled.</Text>
+    </Row>
+    <Row Tag="LOC_RA_CHARGES" Language="zh_Hans_CN">
+      <Text>当前规则铺铁路消耗建造次数，请使用手动施工</Text>
+    </Row>
+    <Row Tag="LOC_RA_CHARGES" Language="en_US">
+      <Text>Railroads cost unit charges in this ruleset. Use manual construction.</Text>
+    </Row>
+    <Row Tag="LOC_RA_RESOURCES" Language="zh_Hans_CN">
+      <Text>资源不足，已停止施工；补充后点击恢复</Text>
+    </Row>
+    <Row Tag="LOC_RA_RESOURCES" Language="en_US">
+      <Text>Insufficient resources. Replenish, then click to resume.</Text>
+    </Row>
+    <Row Tag="LOC_RA_API_ERROR" Language="zh_Hans_CN">
+      <Text>接口异常，已停止施工，请查看 Lua.log</Text>
+    </Row>
+    <Row Tag="LOC_RA_API_ERROR" Language="en_US">
+      <Text>API error; construction disabled. See Lua.log.</Text>
+    </Row>
+    <Row Tag="LOC_RA_SAVING" Language="zh_Hans_CN">
+      <Text>正在保存…</Text>
+    </Row>
+    <Row Tag="LOC_RA_SAVING" Language="en_US">
+      <Text>Saving…</Text>
+    </Row>
+    <Row Tag="LOC_RA_SAVE_FAILED" Language="zh_Hans_CN">
+      <Text>保存未确认，请检查模组加载及 Lua.log</Text>
+    </Row>
+    <Row Tag="LOC_RA_SAVE_FAILED" Language="en_US">
+      <Text>Save unconfirmed; check mod loading and Lua.log.</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

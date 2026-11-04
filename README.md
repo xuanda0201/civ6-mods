@@ -4,7 +4,7 @@
 
 工坊上传：[Windows 上传准备包](bundles/steam-workshop-upload-kit.zip) · [逐步上传说明](WORKSHOP.md)。材料已准备，尚未上传或公开工坊条目。
 
-直接试玩：[下载四合一安装包](bundles/civ6-mods-preview.zip) · [Steam 版安装步骤](INSTALL.md)。当前均为尚未实机验证的预览版。
+直接试玩：[下载合集安装包](bundles/civ6-mods-preview.zip) · [Steam 版安装步骤](INSTALL.md)。当前均为尚未实机验证的预览版。
 
 | Mod | 功能 | 说明 | 安装包 |
 | --- | --- | --- | --- |
@@ -12,6 +12,9 @@
 | SpyRepeat · 间谍任务循环 | 每名间谍独立开关，重复任务，异常时暂停 | [使用说明](SpyRepeat/README.md) | [下载 0.1.0](SpyRepeat/dist/SpyRepeat-0.1.0.zip) |
 | BuilderAuto · 建造者自动作业 | 每个建造者独立开关，自动修复、开发资源和改良工作地块 | [使用说明](BuilderAuto/README.md) | [下载 0.2.0](BuilderAuto/dist/BuilderAuto-0.2.0.zip) |
 | AutoTheme · 巨作一键整理 | 整理整个巨作面板，支持产品、遗物、著作、音乐、艺术品和文物 | [使用说明](AutoTheme/README.md) | [下载 0.2.0](AutoTheme/dist/AutoTheme-0.2.0.zip) |
+| RailAuto · 沿途自动铺铁路 | 军事工程师、大亨等单位独立开关，正常移动时沿途铺设 | [使用说明](RailAuto/README.md) | [下载 0.1.0](RailAuto/dist/RailAuto-0.1.0.zip) |
+
+游戏规则集、HD 版本及验证状态见 [兼容记录](COMPATIBILITY.md)。
 
 目录约定：
 
@@ -33,6 +36,10 @@ civ6/
 ├── AutoTheme/
 │   ├── README.md
 │   ├── src/AutoTheme/
+│   └── dist/
+├── RailAuto/
+│   ├── README.md
+│   ├── src/RailAuto/
 │   └── dist/
 └── 其他Mod/                  # 后续项目同样独立组织
 ```

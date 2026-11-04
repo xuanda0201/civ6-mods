@@ -34,5 +34,14 @@
     "strapline": "修复优先 · 资源开发 · 保留地貌",
     "sequence": "03"
   },
-  "repositorySourcePath": "../src/BuilderAuto"
+  "repositorySourcePath": "../src/BuilderAuto",
+  "compatibility": {
+    "primaryRuleset": "RULESET_EXPANSION_2",
+    "hdTarget": "2.2",
+    "vanillaGatheringStorm": "unverified",
+    "hd22": "unverified",
+    "otherHDVersions": "unverified",
+    "notes": "See COMPATIBILITY.md and project README. No real-game verification.",
+    "otherRulesets": "unverified"
+  }
 }

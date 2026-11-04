@@ -96,7 +96,7 @@ def main():
             line([(482, 302), (572, 309), (647, 373)], accent, 21)
             line([(483, 300), (444, 337)], accent, 13)
             line([(376, 546), (650, 546)], accent, 4)
-        else:
+        elif name == "AutoTheme":
             for index in range(3):
                 x = 342 + index * 120
                 box((x, 323, x + 101, 491), fill="#253248", width=5, radius=3)
@@ -107,6 +107,12 @@ def main():
             line([(393, 532), (632, 532)], accent, 4)
             for x in [393, 512, 632]:
                 ellipse((x - 7, 525, x + 7, 539), fill=accent)
+        elif name == "RailAuto":
+            line([(438, 295), (385, 548)], width=12)
+            line([(586, 295), (639, 548)], width=12)
+            for y in range(320, 541, 44):
+                span = 88 + (y - 320) * 0.25
+                line([(512 - span, y), (512 + span, y)], "#F1EEE7", 9)
         text(cover["title"], 684, 74, path=cjk)
         text(cover["english"].upper(), 786, 39, color=accent)
         text(cover["strapline"], 854, 29, path=cjk, color="#AEBECA")

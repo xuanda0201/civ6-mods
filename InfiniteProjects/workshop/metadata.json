@@ -34,5 +34,14 @@
     "strapline": "逐城开关 · 队列空闲时续建",
     "sequence": "01"
   },
-  "repositorySourcePath": "../src/InfiniteProjects"
+  "repositorySourcePath": "../src/InfiniteProjects",
+  "compatibility": {
+    "primaryRuleset": "RULESET_EXPANSION_2",
+    "hdTarget": "2.2",
+    "vanillaGatheringStorm": "unverified",
+    "hd22": "unverified",
+    "otherHDVersions": "unverified",
+    "notes": "See COMPATIBILITY.md and project README. No real-game verification.",
+    "otherRulesets": "unverified"
+  }
 }

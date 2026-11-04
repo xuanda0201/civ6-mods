@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fcc92ddd-dbb6-4ed5-aea6-8a770ed2621b" version="1">
+  <Properties>
+    <Name>沿途自动铺铁路 / Rail Auto</Name>
+    <Description>军事工程师、大亨等可铺铁路单位的独立开关，移动时沿途铺设铁路。</Description>
+    <Authors>xuanda0201</Authors>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <CompatibleVersions>2.0</CompatibleVersions>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+  </Properties>
+  <ActionCriteria><Criteria id="GS"><RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse></Criteria></ActionCriteria>
+  <InGameActions>
+    <ImportFiles id="RA_Files" criteria="GS"><File>RailAuto_Common.lua</File><File>RailAuto.lua</File></ImportFiles>
+    <AddGameplayScripts id="RA_State" criteria="GS"><File>RailAuto_State.lua</File></AddGameplayScripts>
+    <AddUserInterfaces id="RA_UI" criteria="GS">
+      <Properties><Context>InGame</Context><LoadOrder>20000</LoadOrder></Properties>
+      <File>RailAuto.xml</File>
+    </AddUserInterfaces>
+    <UpdateText id="RA_Text" criteria="GS"><File>Text.xml</File></UpdateText>
+  </InGameActions>
+  <Files>
+    <File>RailAuto_Common.lua</File><File>RailAuto_State.lua</File><File>RailAuto.lua</File>
+    <File>RailAuto.xml</File><File>Text.xml</File><File>LICENSE.txt</File>
+  </Files>
+</Mod>

@@ -34,5 +34,14 @@
     "strapline": "全槽位读取 · 优先组合主题",
     "sequence": "04"
   },
-  "repositorySourcePath": "../src/AutoTheme"
+  "repositorySourcePath": "../src/AutoTheme",
+  "compatibility": {
+    "primaryRuleset": "RULESET_EXPANSION_2",
+    "hdTarget": "2.2",
+    "vanillaGatheringStorm": "unverified",
+    "hd22": "unverified",
+    "otherHDVersions": "unverified",
+    "notes": "See COMPATIBILITY.md and project README. No real-game verification.",
+    "otherRulesets": "unverified"
+  }
 }
