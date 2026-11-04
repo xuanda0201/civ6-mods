@@ -82,3 +82,7 @@ Mods/
 参考：[文明 6 官方手册的额外内容说明](https://downloads.2kgames.com/civilization/vi/manuals/eu/CIV_VI_25TH_ONLINE_MANUAL_ENG.pdf)、[Aspyr 的 Mac Steam 数据目录迁移说明](https://support.aspyr.com/hc/en-us/articles/19003861040653-Game-Files-Missing-after-update-Civilization-VI-Mac-Steam)。
 
 RailAuto 要求《风云变幻》规则集；沿途施工不额外消耗行动力，资源不足只停施工、不取消移动。兼容范围与游戏/HD 验证状态见 `COMPATIBILITY.md`。
+
+## 可选独立领袖
+
+“杨广·通济四海”提供单独安装包 `YangGuangRework/dist/YangGuangRework-0.1.0.zip`，不包含在上述五个便利功能的合集包中。解压后复制 `YangGuangRework` 文件夹到同一个 Mods 目录；保留并启用原杨广、王朝特性、HD，以及所需官方 DLC。新局选择“杨广·通济四海”，原来的杨广仍可选。详细前置及能力见该项目 README。

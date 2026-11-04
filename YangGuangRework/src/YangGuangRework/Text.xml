@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GameData>
+  <LocalizedText>
+    <Row Tag="LOC_LEADER_XGYG_NAME" Language="zh_Hans_CN">
+      <Text>杨广·通济四海</Text>
+    </Row>
+    <Row Tag="LOC_LEADER_XGYG_NAME" Language="en_US">
+      <Text>Yang Guang: Four Seas</Text>
+    </Row>
+    <Row Tag="LOC_TRAIT_XGYG_NAME" Language="zh_Hans_CN">
+      <Text>通济四海</Text>
+    </Row>
+    <Row Tag="LOC_TRAIT_XGYG_NAME" Language="en_US">
+      <Text>The Four Seas Connected</Text>
+    </Row>
+    <Row Tag="LOC_TRAIT_XGYG_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>首都获得+2人口和免费粮仓；保留最多两次的大举迁都项目，工程科技解锁运河和堤坝。不消耗人口瞬建运河或奇观。[NEWLINE]保留隋朝运河大业内贸收益、运河商路容量及免费商人，获得秦国法家改革的军营与水利建设加成、建成奖励和秦长城。获得当前HD版本的中统建元与哈庇的降临，不获得横扫六合、客卿或秦锐士。[NEWLINE]四方通衢：其他文明通往本方城市的每条国际商路，为目的城市提供+2金币、+1文化，不区分陆路或海路。[NEWLINE]特色单位：府兵、骁果、中世纪五牙战舰。不具备仓廪建造资格。</Text>
+    </Row>
+    <Row Tag="LOC_TRAIT_XGYG_DESCRIPTION" Language="en_US">
+      <Text>Capital gains +2 Population and a free Granary. Retains Move Capital (twice) and Engineering unlocks for Canals/Dams. No population rush for canals or wonders. Retains Sui trade bonuses; gains Qin district construction bonuses and Qin Great Wall, plus current HD Kublai and Ptolemaic Cleopatra leader traits. No Qin leader trait, Retainers or Ruishi. Foreign incoming trade routes provide the destination city +2 Gold and +1 Culture, on land or sea. Unique units: Fubing, Xiaoguo and medieval Wuya Warship. Cannot build Canglin.</Text>
+    </Row>
+    <Row Tag="LOC_UNIT_XGYG_WUYA_NAME" Language="zh_Hans_CN">
+      <Text>五牙战舰</Text>
+    </Row>
+    <Row Tag="LOC_UNIT_XGYG_WUYA_NAME" Language="en_US">
+      <Text>Wuya Warship</Text>
+    </Row>
+    <Row Tag="LOC_UNIT_XGYG_WUYA_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>杨广·通济四海的中世纪特色海军远程单位，取代护卫舰，于雇佣兵市政解锁。基础战斗力、造价、维护费和战略资源要求沿用当前护卫舰。[NEWLINE]楼船水师：位于海岸或己方已建成运河两格内时+5战斗力，两条件不叠加。[NEWLINE]护航朝贡：四格以内的己方商人免遭劫掠，多艘战舰不会叠加。[NEWLINE]预览版使用现成护卫舰模型及图标。</Text>
+    </Row>
+    <Row Tag="LOC_UNIT_XGYG_WUYA_DESCRIPTION" Language="en_US">
+      <Text>Medieval naval ranged unit unique to Yang Guang: Four Seas, replacing the Frigate. Unlocked at Mercenaries. Inherits current Frigate base stats, costs, upkeep and strategic resource requirements. +5 Strength on Coast or within 2 tiles of a completed friendly Canal; conditions do not stack. Friendly Traders within 4 tiles are protected from plundering. Preview uses existing Frigate art and icons.</Text>
+    </Row>
+    <Row Tag="LOC_ABILITY_XGYG_WUYA" Language="zh_Hans_CN">
+      <Text>楼船水师：沿海或己方运河两格内+5战斗力。</Text>
+    </Row>
+    <Row Tag="LOC_ABILITY_XGYG_WUYA" Language="en_US">
+      <Text>Tower Fleet: +5 Strength on Coast or near a completed friendly Canal.</Text>
+    </Row>
+    <Row Tag="LOC_XGYG_ESCORT_NAME" Language="zh_Hans_CN">
+      <Text>护航朝贡</Text>
+    </Row>
+    <Row Tag="LOC_XGYG_ESCORT_NAME" Language="en_US">
+      <Text>Tributary Convoy</Text>
+    </Row>
+    <Row Tag="LOC_XGYG_ESCORT_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>处于五牙战舰四格内，免遭劫掠。</Text>
+    </Row>
+    <Row Tag="LOC_XGYG_ESCORT_DESCRIPTION" Language="en_US">
+      <Text>Protected from plundering within 4 tiles of a Wuya Warship.</Text>
+    </Row>
+    <Row Tag="LOC_XGYG_STRENGTH_PREVIEW" Language="zh_Hans_CN">
+      <Text>+{1_Amount} 战斗力，来自楼船水师</Text>
+    </Row>
+    <Row Tag="LOC_XGYG_STRENGTH_PREVIEW" Language="en_US">
+      <Text>+{1_Amount} Strength from Tower Fleet</Text>
+    </Row>
+  </LocalizedText>
+</GameData>

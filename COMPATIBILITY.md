@@ -21,3 +21,7 @@
 各项目 `workshop/metadata.json` 的 `inGameVerified` 保持 `false`。实际试玩后按真实情况补充游戏 build、DLC/规则集、HD 版本、其他启用模组和结果；发现差异再修复，不预先填写“全部兼容”。
 
 已知功能重叠：同一城市不要同时开启 InfiniteProjects 项目托管和 Civ 6 Auto Pilot 生产托管；同一建造者或铁路单位不要同时交给两个自动作业 Mod。
+
+## 独立领袖：杨广·通济四海
+
+新增 `LEADER_XGYG`，原杨广和其他来源领袖的数据库行不修改。要求风云变幻、HD、Phantagonist 杨广、王朝特性及撒哈拉统治者 DLC，前置须同时启用。主要适配 HD v2.2，其他规则集不支持，所有实机组合均未验证；需新局。提供独立 ZIP，不放入便利功能合集。

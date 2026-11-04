@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AssetObjects..GameDependencyData>
+  <ID>
+    <name text="YangGuangRework" />
+    <id text="8df6ab90-6160-4bb3-882e-0a310ca610a7" />
+  </ID>
+  <RequiredGameArtIDs>
+    <Element>
+      <name text="Civ6" />
+      <id text="cb2f71b7-843e-4af3-9ca7-992acda9c195" />
+    </Element>
+    <Element>
+      <name text="PhantagonistYangGuang" />
+      <id text="3f96311d-1c8e-4201-bdc9-4061cf76c511" />
+    </Element>
+  </RequiredGameArtIDs>
+  <SystemDependencies>
+    <Element>
+      <ConsumerName text="Units" />
+      <ArtDefDependencyPaths>
+        <Element text="Units.artdef" />
+      </ArtDefDependencyPaths>
+      <LibraryDependencies>
+        <Element text="Unit" />
+        <Element text="VFX" />
+        <Element text="Light" />
+      </LibraryDependencies>
+      <LoadsLibraries>true</LoadsLibraries>
+    </Element>
+    <Element>
+      <ConsumerName text="Audio" />
+      <ArtDefDependencyPaths>
+        <Element text="Units.artdef" />
+      </ArtDefDependencyPaths>
+      <LibraryDependencies />
+      <LoadsLibraries>false</LoadsLibraries>
+    </Element>
+    <Element>
+      <ConsumerName text="LeaderFallback" />
+      <ArtDefDependencyPaths>
+        <Element text="FallbackLeaders.artdef" />
+      </ArtDefDependencyPaths>
+      <LibraryDependencies>
+        <Element text="LeaderFallback" />
+      </LibraryDependencies>
+      <LoadsLibraries>true</LoadsLibraries>
+    </Element>
+  </SystemDependencies>
+  <LibraryDependencies>
+    <Element>
+      <LibraryName text="Unit" />
+      <PackageDependencies />
+    </Element>
+    <Element>
+      <LibraryName text="VFX" />
+      <PackageDependencies />
+    </Element>
+    <Element>
+      <LibraryName text="Light" />
+      <PackageDependencies />
+    </Element>
+    <Element>
+      <LibraryName text="LeaderFallback" />
+      <PackageDependencies />
+    </Element>
+  </LibraryDependencies>
+</AssetObjects..GameDependencyData>

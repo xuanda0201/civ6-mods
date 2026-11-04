@@ -107,6 +107,14 @@ def main():
             line([(393, 532), (632, 532)], accent, 4)
             for x in [393, 512, 632]:
                 ellipse((x - 7, 525, x + 7, 539), fill=accent)
+        elif name == "YangGuangRework":
+            for y in (498, 530, 562):
+                line([(350, y), (400, y - 10), (450, y), (500, y - 10),
+                      (550, y), (600, y - 10), (670, y)], "#617D94", 4)
+            draw.polygon([xy(p) for p in [(365, 468), (654, 468), (608, 505), (410, 505)]], fill=accent)
+            for x, top in [(430, 350), (512, 298), (592, 365)]:
+                line([(x, top), (x, 465)], "#F1EEE7", 5)
+                draw.polygon([xy(p) for p in [(x - 6, top + 6), (x - 6, 443), (x - 62, 443)]], fill=accent)
         elif name == "RailAuto":
             line([(438, 295), (385, 548)], width=12)
             line([(586, 295), (639, 548)], width=12)

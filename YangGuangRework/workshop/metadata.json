@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "name": "YangGuangRework",
+  "version": "0.1.0",
+  "title": "杨广·通济四海 / Yang Guang: Four Seas [Preview]",
+  "author": "xuanda0201",
+  "visibility": "private",
+  "tags": [
+    "UI",
+    "Gameplay"
+  ],
+  "contentPath": "content",
+  "entryPoint": "YangGuangRework.modinfo",
+  "preview": "preview.png",
+  "descriptionChinese": "description.zh-CN.bbcode",
+  "descriptionEnglish": "description.en-US.bbcode",
+  "publishedFileId": null,
+  "workshopUrl": null,
+  "requiredWorkshopItems": [
+    "3595246973",
+    "3310033009",
+    "2465378070"
+  ],
+  "status": "prepared-not-uploaded",
+  "inGameVerified": false,
+  "verification": {
+    "gameVersion": null,
+    "dlc": [],
+    "hdVersion": null,
+    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+  },
+  "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
+  "cover": {
+    "title": "杨广·通济四海",
+    "english": "Yang Guang: Four Seas",
+    "accent": "#D9B665",
+    "kicker": "MEDIEVAL TRADE & FLEET",
+    "strapline": "独立领袖 · 运河商贸 · 五牙水师",
+    "sequence": "06"
+  },
+  "repositorySourcePath": "../src/YangGuangRework",
+  "compatibility": {
+    "primaryRuleset": "RULESET_EXPANSION_2",
+    "hdTarget": "2.2",
+    "vanillaGatheringStorm": "unverified",
+    "hd22": "unverified",
+    "otherHDVersions": "unverified",
+    "notes": "Independent new leader; original Yang Guang unchanged. Requires both Phantagonist mods, HD, GS and Rulers of the Sahara. Not verified in-game.",
+    "otherRulesets": "unsupported; actions restricted to RULESET_EXPANSION_2"
+  }
+}

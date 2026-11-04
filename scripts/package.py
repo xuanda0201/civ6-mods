@@ -6,8 +6,9 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-NAMES = ("InfiniteProjects", "SpyRepeat", "BuilderAuto", "AutoTheme", "RailAuto")
+QOL_NAMES = ("InfiniteProjects", "SpyRepeat", "BuilderAuto", "AutoTheme", "RailAuto")
 
+NAMES = QOL_NAMES + ("YangGuangRework",)
 
 def write_zip(destination, files):
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -32,14 +33,15 @@ def main():
             if not (source / node.text).is_file():
                 raise FileNotFoundError(source / node.text)
         package = []
-        for file in sorted(source.iterdir()):
+        for file in sorted(source.rglob("*")):
             if file.is_file() and not file.name.startswith("."):
-                package.append((file, Path(name) / file.name))
-                kit.append((file, Path(name) / "content" / file.name))
+                package.append((file, Path(name) / file.relative_to(source)))
+                kit.append((file, Path(name) / "content" / file.relative_to(source)))
         package.append((project / "README.md", Path("README.md")))
         write_zip(project / "dist" / f"{name}-{metadata['version']}.zip", package)
-        bundle.extend(package[:-1])
-        bundle.append((project / "README.md", Path(name) / "README.md"))
+        if name in QOL_NAMES:
+            bundle.extend(package[:-1])
+            bundle.append((project / "README.md", Path(name) / "README.md"))
         kit.append((project / "README.md", Path(name) / "content" / "README.md"))
         for file in sorted(material.iterdir()):
             if file.is_file() and not file.name.startswith("."):
@@ -66,7 +68,7 @@ def main():
             for node in manifest.findall("./Files/File"):
                 if not (content / node.text).is_file():
                     raise FileNotFoundError(content / node.text)
-    print("All five extracted Workshop entry points and manifest files verified.")
+    print(f"All {len(NAMES)} extracted Workshop entry points and manifest files verified; QoL bundle remains {len(QOL_NAMES)} mods.")
 
 
 if __name__ == "__main__":

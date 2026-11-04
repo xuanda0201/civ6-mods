@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Mod id="8df6ab90-6160-4bb3-882e-0a310ca610a7" version="1">
+  <Properties>
+    <Name>杨广·通济四海 / Yang Guang: Four Seas</Name>
+    <Description>独立领袖：保留原杨广，新增水利、贸易与中世纪水师版本。</Description>
+    <Authors>xuanda0201</Authors>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <CompatibleVersions>2.0</CompatibleVersions>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Gathering Storm" />
+    <Mod id="3f96311d-1c8e-4201-bdc9-4061cf76c511" title="Phantagonist Yang Guang" />
+    <Mod id="4c4a883e-21a5-46af-99b3-ae018d7e0a3e" title="Chinese Dynasty Uniques" />
+    <Mod id="521b8777-0977-4859-a5ee-3e411a732e5c" title="Harmony in Diversity" />
+    <Mod id="82AE6F24-930F-4640-833C-FCDFD4845757" title="Rulers of the Sahara" />
+  </Dependencies>
+  <ActionCriteria>
+    <Criteria id="GS">
+      <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+    </Criteria>
+  </ActionCriteria>
+  <FrontEndActions>
+    <UpdateDatabase id="XGYG_FrontEndActions_UpdateDatabase">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Config.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="XGYG_FrontEndActions_UpdateText">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Text.xml</File>
+    </UpdateText>
+    <UpdateIcons id="XGYG_FrontEndActions_UpdateIcons">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Icons.sql</File>
+    </UpdateIcons>
+    <UpdateColors id="XGYG_FrontEndActions_UpdateColors">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Colors.sql</File>
+    </UpdateColors>
+    <UpdateArt id="XGYG_FrontEndActions_UpdateArt">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>YangGuangRework.dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="XGYG_InGameActions_UpdateDatabase" criteria="GS">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Rework.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="XGYG_InGameActions_UpdateText" criteria="GS">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Text.xml</File>
+    </UpdateText>
+    <UpdateIcons id="XGYG_InGameActions_UpdateIcons" criteria="GS">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Icons.sql</File>
+    </UpdateIcons>
+    <UpdateColors id="XGYG_InGameActions_UpdateColors" criteria="GS">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>Colors.sql</File>
+    </UpdateColors>
+    <UpdateArt id="XGYG_InGameActions_UpdateArt" criteria="GS">
+      <Properties>
+        <LoadOrder>1000000000</LoadOrder>
+      </Properties>
+      <File>YangGuangRework.dep</File>
+    </UpdateArt>
+    <AddGameplayScripts id="XGYG_Fleet" criteria="GS">
+      <File>YangGuangRework.lua</File>
+    </AddGameplayScripts>
+  </InGameActions>
+  <Files>
+    <File>Rework.sql</File>
+    <File>Config.sql</File>
+    <File>Icons.sql</File>
+    <File>Colors.sql</File>
+    <File>Text.xml</File>
+    <File>YangGuangRework.lua</File>
+    <File>ArtDefs/Units.artdef</File>
+    <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>YangGuangRework.dep</File>
+    <File>LICENSE.txt</File>
+  </Files>
+</Mod>

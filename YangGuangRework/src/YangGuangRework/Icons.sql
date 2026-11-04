@@ -1,0 +1,4 @@
+INSERT INTO IconDefinitions(Name,Atlas,"Index")
+SELECT REPLACE(Name,'LEADER_PHANTA_YANG_GUANG','LEADER_XGYG'),Atlas,"Index" FROM IconDefinitions WHERE Name LIKE 'ICON_LEADER_PHANTA_YANG_GUANG%';
+INSERT INTO IconDefinitions(Name,Atlas,"Index")
+SELECT REPLACE(Name,'UNIT_FRIGATE','UNIT_XGYG_WUYA'),Atlas,"Index" FROM IconDefinitions WHERE Name LIKE 'ICON_UNIT_FRIGATE%';

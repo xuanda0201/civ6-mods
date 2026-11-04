@@ -14,6 +14,8 @@
 | AutoTheme · 巨作一键整理 | 整理整个巨作面板，支持产品、遗物、著作、音乐、艺术品和文物 | [使用说明](AutoTheme/README.md) | [下载 0.2.0](AutoTheme/dist/AutoTheme-0.2.0.zip) |
 | RailAuto · 沿途自动铺铁路 | 军事工程师、大亨等单位独立开关，正常移动时沿途铺设 | [使用说明](RailAuto/README.md) | [下载 0.1.0](RailAuto/dist/RailAuto-0.1.0.zip) |
 
+另有可选的独立领袖：[杨广·通济四海](YangGuangRework/README.md) · [下载 0.1.0](YangGuangRework/dist/YangGuangRework-0.1.0.zip)。原杨广保留；此项有单独前置，不包含在五个便利功能的合集安装包中。
+
 游戏规则集、HD 版本及验证状态见 [兼容记录](COMPATIBILITY.md)。
 
 目录约定：

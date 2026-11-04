@@ -17,7 +17,7 @@
 
 不需要先在 ModBuddy 重建工程；当前已有可选取的 `.modinfo`。这些是 Lua/XML Mod，不需要先安装大型 Development Assets 美术资源包。
 
-## 五个条目的材料
+## 五个便利功能与一个独立领袖的材料
 
 | Mod | 选择的入口（相对准备包） | 当前版本 |
 | --- | --- | --- |
@@ -26,6 +26,7 @@
 | 建造者自动作业 | `BuilderAuto/content/BuilderAuto.modinfo` | 0.2.0 |
 | 巨作一键整理 | `AutoTheme/content/AutoTheme.modinfo` | 0.2.0 |
 | 沿途自动铺铁路 | `RailAuto/content/RailAuto.modinfo` | 0.1.0 |
+| 杨广·通济四海（独立领袖） | `YangGuangRework/content/YangGuangRework.modinfo` | 0.1.0 |
 
 每个目录还包含封面 PNG、中文/英文 BBCode 说明、真实截图待拍清单和元数据。封面来自几何图形与文字绘制，没有伪造游戏截图。
 
@@ -58,3 +59,5 @@ python scripts/package.py
 参考：[开发工具说明](https://github.com/Wild-W/Civ-6-Documentation/blob/main/README.md)、[Civ6 上传流程](https://steamcommunity.com/sharedfiles/filedetails/?id=1836201808)、[Steam Workshop 上传与更新机制](https://partner.steamgames.com/doc/features/workshop/implementation)。
 
 游戏规则集、HD 版本和真实验证情况按 `COMPATIBILITY.md` 维护；发布页不得将 HD v2.2 适配目标写成已验证兼容。
+
+独立领袖需单独验证，并在工坊页面列出原杨广、王朝特性、HD 及官方 DLC 前置。包中只有新增配置/代码和资源引用；不打包第三方画像、单位资产。原作者署名与原资源许可证保持不变。
