@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="a1c278f8-20bc-4fbb-b0bd-6b121c0d0342" version="1">
+<Mod id="a1c278f8-20bc-4fbb-b0bd-6b121c0d0342" version="2">
   <Properties>
     <Name>建造者自动作业 / Builder Auto</Name>
     <Description>逐个建造者开关：修复、开发资源、改良工作地块。遇敌暂停，手动操作接管。</Description>

@@ -10,7 +10,7 @@
 | --- | --- | --- | --- |
 | InfiniteProjects · 无限循环项目 | 每城独立开关，队列空闲时自动续建指定项目 | [使用说明](InfiniteProjects/README.md) | [下载 0.1.0](InfiniteProjects/dist/InfiniteProjects-0.1.0.zip) |
 | SpyRepeat · 间谍任务循环 | 每名间谍独立开关，重复任务，异常时暂停 | [使用说明](SpyRepeat/README.md) | [下载 0.1.0](SpyRepeat/dist/SpyRepeat-0.1.0.zip) |
-| BuilderAuto · 建造者自动作业 | 每个建造者独立开关，自动修复、开发资源和改良工作地块 | [使用说明](BuilderAuto/README.md) | [下载 0.1.0](BuilderAuto/dist/BuilderAuto-0.1.0.zip) |
+| BuilderAuto · 建造者自动作业 | 每个建造者独立开关，自动修复、开发资源和改良工作地块 | [使用说明](BuilderAuto/README.md) | [下载 0.2.0](BuilderAuto/dist/BuilderAuto-0.2.0.zip) |
 | AutoTheme · 巨作一键整理 | 整理整个巨作面板，支持产品、遗物、著作、音乐、艺术品和文物 | [使用说明](AutoTheme/README.md) | [下载 0.2.0](AutoTheme/dist/AutoTheme-0.2.0.zip) |
 
 目录约定：

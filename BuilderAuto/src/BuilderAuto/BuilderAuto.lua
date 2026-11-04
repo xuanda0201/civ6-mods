@@ -1,13 +1,11 @@
-include("InstanceManager");
-include("SupportFunctions");
 include("BuilderAuto_Common");
 include("BuilderAuto_Rules");
 
 local BA = BuilderAuto;
-local rows = InstanceManager:new("BuilderRow", "Root", Controls.BuilderStack);
 local pending, plans, flights, holds, urgent, statuses, examined = {}, {}, {}, {}, {}, {}, {};
 local clock, elapsed, serial, revision = 0, 0, 0, 0;
-local visible = false;
+local actionStack;
+local panelLookupWarned = false;
 
 local function Text(key, ...)
     return Locale.Lookup("LOC_BA_" .. key, ...);
@@ -48,9 +46,6 @@ local function Stop(id, reason)
     plans[id] = nil;
     examined[id] = nil;
     if pending[id] then pending[id].after = nil; end
-    if reason ~= "OFF" and reason ~= "MANUAL" then
-        visible = true; Controls.Panel:SetHide(false);
-    end
 end
 
 local function Toggle(id)
@@ -204,29 +199,62 @@ local function Builders()
     return result;
 end
 
-local function Refresh(builders)
-    Controls.OpenButton:SetHide(Player() == nil);
-    if not visible or Player() == nil then return; end
-    rows:ResetInstances();
-    for _, unit in ipairs(builders) do
+-- Attach our own control to the installed unit panel without replacing its script.
+-- Retry during updates: the unit panel can load after this UI context.
+local function AttachButton()
+    local parent = ContextPtr:LookUpControl("/InGame/UnitPanel/ActionsStack");
+    if parent == nil then
+        if not panelLookupWarned then
+            print("[BuilderAuto] Waiting for UnitPanel/ActionsStack");
+            panelLookupWarned = true;
+        end
+        return false;
+    end
+    if actionStack ~= parent then
+        Controls.AutomationAction:ChangeParent(parent);
+        actionStack = parent;
+        print("[BuilderAuto] Automation button attached to unit panel");
+    end
+    return true;
+end
+
+local function SelectedBuilder()
+    local unit = UI.GetHeadSelectedUnit();
+    if unit and unit:GetOwner() == Game.GetLocalPlayer() and
+        BA.IsBuilder(unit) and unit:GetBuildCharges() > 0 then return unit; end
+end
+
+local function Refresh()
+    local attached = AttachButton();
+    local unit = SelectedBuilder();
+    Controls.AutomationAction:SetHide(not attached or unit == nil);
+    if attached and unit then
         local id = unit:GetID();
         local state = State(unit);
-        local row = rows:GetInstance();
-        TruncateStringWithTooltip(row.NameLabel, 370,
-            Locale.Lookup(unit:GetName()) .. " · " .. Text("CHARGES", unit:GetBuildCharges()));
+        local enabled = state.Enabled and not holds[id];
         local reason = pending[id] and "SAVING" or holds[id] or
-            (not state.Enabled and state.Reason) or statuses[id] or (state.Enabled and "RUNNING" or "OFF");
-        TruncateStringWithTooltip(row.StatusLabel, 370, Text(reason));
-        row.ToggleButton:SetHide(false);
-        row.ToggleButton:SetText(Text(state.Enabled and not holds[id] and "DISABLE" or "ENABLE"));
-        row.ToggleButton:SetDisabled(not Active() or pending[id] ~= nil);
-        row.ToggleButton:RegisterCallback(Mouse.eLClick, function() Toggle(id); end);
+            (not state.Enabled and state.Reason) or statuses[id] or (enabled and "RUNNING" or "OFF");
+        local label = "BUTTON_OFF";
+        if pending[id] then label = "BUTTON_SAVING";
+        elseif enabled then label = "BUTTON_ON";
+        elseif (holds[id] and holds[id] ~= "OFF") or
+            (not state.Enabled and state.Reason and state.Reason ~= "OFF") then label = "BUTTON_PAUSED"; end
+        Controls.AutomationButton:SetText(Text(label));
+        Controls.AutomationButton:SetToolTipString(Text("TITLE") .. "[NEWLINE]" ..
+            Text(reason) .. "[NEWLINE][NEWLINE]" .. Text(enabled and "DISABLE" or "ENABLE") ..
+            "[NEWLINE]" .. Text("HELP"));
+        Controls.AutomationButton:SetDisabled(not Active() or pending[id] ~= nil);
     end
-    if #builders == 0 then
-        local row = rows:GetInstance();
-        row.NameLabel:SetText(Text("NO_BUILDERS")); row.StatusLabel:SetText(""); row.ToggleButton:SetHide(true);
+    if actionStack then
+        actionStack:CalculateSize();
+        actionStack:ReprocessAnchoring();
+        -- The native panel also performs this sizing on its next refresh. Accommodate
+        -- our extra action immediately, regardless of selection event handler order.
+        local panel = ContextPtr:LookUpControl("/InGame/UnitPanel/UnitPanelBaseContainer");
+        if panel and unit and actionStack:GetSizeX() > panel:GetSizeX() then
+            panel:SetSizeX(actionStack:GetSizeX() + 20);
+        end
     end
-    Controls.BuilderStack:CalculateSize(); Controls.Scroll:CalculateInternalSize();
 end
 
 local function Update(delta)
@@ -272,17 +300,20 @@ local function Update(delta)
             end
         end
     end
-    Refresh(Builders());
+    Refresh();
 end
 
 local function MarkDirty()
     revision = revision + 1;
 end
 
-Controls.OpenButton:RegisterCallback(Mouse.eLClick, function()
-    visible = not visible; Controls.Panel:SetHide(not visible); Refresh(Builders());
+Controls.AutomationButton:RegisterCallback(Mouse.eLClick, function()
+    -- Resolve the current selection on click; never act on a previously selected builder.
+    local unit = SelectedBuilder();
+    if unit then Toggle(unit:GetID()); end
+    Refresh();
 end);
-Controls.CloseButton:RegisterCallback(Mouse.eLClick, function() visible = false; Controls.Panel:SetHide(true); end);
+Events.UnitSelectionChanged.Add(Refresh);
 Events.UnitOperationStarted.Add(OnOperation);
 Events.UnitCommandStarted.Add(OnCommand);
 Events.UnitMoveComplete.Add(MarkDirty);
@@ -291,4 +322,5 @@ Events.ImprovementAddedToMap.Add(MarkDirty);
 Events.ImprovementRemovedFromMap.Add(MarkDirty);
 Events.PlayerTurnActivated.Add(MarkDirty);
 ContextPtr:SetUpdate(Update);
+Refresh();
 print("[BuilderAuto] UI loaded");

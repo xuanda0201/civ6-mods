@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Context Name="BuilderAuto">
-  <GridButton ID="OpenButton" Style="MainButton" Anchor="L,T" Offset="20,218" Size="180,36" String="LOC_BA_TITLE"/>
-  <Grid ID="Panel" Anchor="L,T" Offset="20,302" Size="430,390" Hidden="1"
-        Texture="Controls_ContainerBlue" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16" ConsumeAllMouse="1">
-    <Label Anchor="L,T" Offset="16,12" Style="FontNormal18" String="LOC_BA_TITLE"/>
-    <Button ID="CloseButton" Anchor="R,T" Offset="8,8" Style="CloseButtonLarge"/>
-    <Label Anchor="L,T" Offset="16,44" Style="FontNormal14" WrapWidth="394" String="LOC_BA_HELP"/>
-    <ScrollPanel ID="Scroll" Anchor="L,T" Offset="10,100" Size="410,274" Style="ScrollPanelWithRightBar">
-      <Stack ID="BuilderStack" StackGrowth="Down" Padding="6" Size="390,auto"/>
-    </ScrollPanel>
-  </Grid>
-  <Instance Name="BuilderRow">
-    <Container ID="Root" Size="390,90">
-      <Label ID="NameLabel" Anchor="L,T" Offset="6,2" Style="FontNormal16" String=""/>
-      <Label ID="StatusLabel" Anchor="L,T" Offset="6,28" Style="FontNormal14" String=""/>
-      <GridButton ID="ToggleButton" Style="MainButton" Anchor="L,B" Offset="6,0" Size="370,32" String=""/>
-    </Container>
-  </Instance>
+  <!-- Reparented into the installed unit panel's ActionsStack by BuilderAuto.lua. -->
+  <Container ID="AutomationAction" Anchor="C,B" Size="112,53" Hidden="1" ConsumeMouse="1">
+    <GridButton ID="AutomationButton" Style="MainButton" Anchor="C,C" Size="108,44" String="LOC_BA_BUTTON_OFF"/>
+  </Container>
 </Context>

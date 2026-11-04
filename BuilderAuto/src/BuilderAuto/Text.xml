@@ -31,12 +31,6 @@
     <Row Tag="LOC_BA_DISABLE" Language="en_US">
       <Text>Disable automation</Text>
     </Row>
-    <Row Tag="LOC_BA_NO_BUILDERS" Language="zh_Hans_CN">
-      <Text>当前没有可管理的建造者</Text>
-    </Row>
-    <Row Tag="LOC_BA_NO_BUILDERS" Language="en_US">
-      <Text>No builders to manage</Text>
-    </Row>
     <Row Tag="LOC_BA_RUNNING" Language="zh_Hans_CN">
       <Text>自动作业已开启</Text>
     </Row>
@@ -151,5 +145,13 @@
     <Row Tag="LOC_BA_SAVE_FAILED" Language="en_US">
       <Text>Setting unconfirmed; no new orders. Retry the switch</Text>
     </Row>
+    <Row Tag="LOC_BA_BUTTON_OFF" Language="zh_Hans_CN"><Text>自动建设：关</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_OFF" Language="en_US"><Text>Auto: off</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_ON" Language="zh_Hans_CN"><Text>自动建设：开</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_ON" Language="en_US"><Text>Auto: on</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_PAUSED" Language="zh_Hans_CN"><Text>自动建设：暂停</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_PAUSED" Language="en_US"><Text>Auto: paused</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_SAVING" Language="zh_Hans_CN"><Text>正在保存…</Text></Row>
+    <Row Tag="LOC_BA_BUTTON_SAVING" Language="en_US"><Text>Saving…</Text></Row>
   </LocalizedText>
 </GameData>
