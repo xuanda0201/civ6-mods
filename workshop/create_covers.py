@@ -67,8 +67,6 @@ def main():
             line([(80, y), (944, y)], "#203447", 1)
         box((30, 30, 994, 994), outline="#395165", width=1)
         text("XUANDA / CIV VI MODS", 62, 21, x=64, center=False, color=accent)
-        box((807, 54, 960, 91), fill=accent, outline=accent, radius=7)
-        text("PREVIEW", 63, 18, color="#122131", x=884)
         text(cover["kicker"], 134, 23, color=accent)
         hexagon = [(512 + 214 * math.cos(math.pi / 3 * i - math.pi / 6),
                     417 + 214 * math.sin(math.pi / 3 * i - math.pi / 6)) for i in range(6)]
@@ -112,9 +110,6 @@ def main():
         text(cover["title"], 684, 74, path=cjk)
         text(cover["english"].upper(), 786, 39, color=accent)
         text(cover["strapline"], 854, 29, path=cjk, color="#AEBECA")
-        line([(64, 925), (960, 925)], "#395165", 1)
-        text("SINGLE PLAYER  /  COMMUNITY MOD", 948, 17, center=False, x=64, color="#9FB0BE")
-        text(cover["sequence"], 938, 32, x=935, color=accent)
         image = image.resize((SIZE, SIZE), Image.Resampling.LANCZOS)
         destination = metadata.parent / "preview.png"
         image.save(destination, optimize=True)
