@@ -103,5 +103,17 @@
     <Row Tag="LOC_RA_SAVE_FAILED" Language="en_US">
       <Text>Save unconfirmed; check mod loading and Lua.log.</Text>
     </Row>
+    <Row Tag="LOC_RA_ENABLE" Language="zh_Hans_CN">
+      <Text>点击开启沿途铺铁路</Text>
+    </Row>
+    <Row Tag="LOC_RA_ENABLE" Language="en_US">
+      <Text>Click to enable automatic rail laying</Text>
+    </Row>
+    <Row Tag="LOC_RA_DISABLE" Language="zh_Hans_CN">
+      <Text>点击关闭沿途铺铁路</Text>
+    </Row>
+    <Row Tag="LOC_RA_DISABLE" Language="en_US">
+      <Text>Click to disable automatic rail laying</Text>
+    </Row>
   </LocalizedText>
 </GameData>

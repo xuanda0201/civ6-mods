@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "RailAuto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "沿途自动铺铁路 / Rail Auto [Preview]",
   "author": "xuanda0201",
   "visibility": "private",

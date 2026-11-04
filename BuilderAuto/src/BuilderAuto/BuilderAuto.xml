@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Context Name="BuilderAuto">
-  <!-- Reparented into the installed unit panel's ActionsStack by BuilderAuto.lua. -->
-  <Container ID="AutomationAction" Anchor="C,B" Size="112,53" Hidden="1" ConsumeMouse="1">
-    <GridButton ID="AutomationButton" Style="MainButton" Anchor="C,C" Size="108,44" String="LOC_BA_BUTTON_OFF"/>
+  <!-- Matches UnitActionInstance; attached to the installed standard action row. -->
+  <Container ID="AutomationAction" Anchor="L,T" Size="44,53" Hidden="1" ConsumeMouse="1">
+    <Button ID="AutomationButton" Anchor="L,T" Size="44,53" Texture="UnitPanel_ActionButton">
+      <Image ID="AutomationIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Texture="UnitActions"/>
+    </Button>
   </Container>
 </Context>

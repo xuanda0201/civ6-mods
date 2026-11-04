@@ -5,6 +5,7 @@ local BA = BuilderAuto;
 local pending, plans, flights, holds, urgent, statuses, examined = {}, {}, {}, {}, {}, {}, {};
 local clock, elapsed, serial, revision = 0, 0, 0, 0;
 local actionStack;
+local actionParent;
 local panelLookupWarned = false;
 
 local function Text(key, ...)
@@ -202,7 +203,8 @@ end
 -- Attach our own control to the installed unit panel without replacing its script.
 -- Retry during updates: the unit panel can load after this UI context.
 local function AttachButton()
-    local parent = ContextPtr:LookUpControl("/InGame/UnitPanel/ActionsStack");
+    local root = ContextPtr:LookUpControl("/InGame/UnitPanel/ActionsStack");
+    local parent = ContextPtr:LookUpControl("/InGame/UnitPanel/StandardActionsStack") or root;
     if parent == nil then
         if not panelLookupWarned then
             print("[BuilderAuto] Waiting for UnitPanel/ActionsStack");
@@ -210,11 +212,12 @@ local function AttachButton()
         end
         return false;
     end
-    if actionStack ~= parent then
+    if actionParent ~= parent then
         Controls.AutomationAction:ChangeParent(parent);
-        actionStack = parent;
+        actionParent = parent;
         print("[BuilderAuto] Automation button attached to unit panel");
     end
+    actionStack = root or parent;
     return true;
 end
 
@@ -231,7 +234,7 @@ local function Refresh()
     if attached and unit then
         local id = unit:GetID();
         local state = State(unit);
-        local enabled = state.Enabled and not holds[id];
+        local enabled = state.Enabled == true and not holds[id];
         local reason = pending[id] and "SAVING" or holds[id] or
             (not state.Enabled and state.Reason) or statuses[id] or (enabled and "RUNNING" or "OFF");
         local label = "BUTTON_OFF";
@@ -239,13 +242,23 @@ local function Refresh()
         elseif enabled then label = "BUTTON_ON";
         elseif (holds[id] and holds[id] ~= "OFF") or
             (not state.Enabled and state.Reason and state.Reason ~= "OFF") then label = "BUTTON_PAUSED"; end
-        Controls.AutomationButton:SetText(Text(label));
-        Controls.AutomationButton:SetToolTipString(Text("TITLE") .. "[NEWLINE]" ..
+        local operation = GameInfo.UnitOperations[UnitOperationTypes.BUILD_IMPROVEMENT];
+        local icon = operation and operation.Icon;
+        if icon == nil or icon == "" then icon = "ICON_UNITOPERATION_BUILD_IMPROVEMENT"; end
+        Controls.AutomationIcon:SetIcon(icon);
+        Controls.AutomationButton:SetSelected(enabled);
+        Controls.AutomationButton:SetToolTipString(Text(label) .. "[NEWLINE]" ..
             Text(reason) .. "[NEWLINE][NEWLINE]" .. Text(enabled and "DISABLE" or "ENABLE") ..
             "[NEWLINE]" .. Text("HELP"));
-        Controls.AutomationButton:SetDisabled(not Active() or pending[id] ~= nil);
+        local disabled = not Active() or pending[id] ~= nil;
+        Controls.AutomationButton:SetDisabled(disabled);
+        Controls.AutomationButton:SetAlpha(disabled and 0.7 or 1);
     end
     if actionStack then
+        if actionParent and actionParent ~= actionStack then
+            actionParent:CalculateSize();
+            actionParent:ReprocessAnchoring();
+        end
         actionStack:CalculateSize();
         actionStack:ReprocessAnchoring();
         -- The native panel also performs this sizing on its next refresh. Accommodate
@@ -312,6 +325,9 @@ Controls.AutomationButton:RegisterCallback(Mouse.eLClick, function()
     local unit = SelectedBuilder();
     if unit then Toggle(unit:GetID()); end
     Refresh();
+end);
+Controls.AutomationButton:RegisterCallback(Mouse.eMouseEnter, function()
+    UI.PlaySound("Main_Menu_Mouse_Over");
 end);
 Events.UnitSelectionChanged.Add(Refresh);
 Events.UnitOperationStarted.Add(OnOperation);

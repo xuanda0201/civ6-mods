@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="fcc92ddd-dbb6-4ed5-aea6-8a770ed2621b" version="1">
+<Mod id="fcc92ddd-dbb6-4ed5-aea6-8a770ed2621b" version="2">
   <Properties>
     <Name>沿途自动铺铁路 / Rail Auto</Name>
     <Description>军事工程师、大亨等可铺铁路单位的独立开关，移动时沿途铺设铁路。</Description>

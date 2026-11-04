@@ -108,4 +108,4 @@ end
 GameEvents.RailAuto_Set.Add(OnSet);
 Events.UnitMoved.Add(OnMoved);
 Events.PlayerTurnActivated.Add(OnTurn);
-print("[RailAuto] Gameplay loaded (0.1.0)");
+print("[RailAuto] Gameplay loaded (0.1.1)");
