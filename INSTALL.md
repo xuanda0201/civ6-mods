@@ -85,6 +85,6 @@ RailAuto 要求《风云变幻》规则集；沿途施工不额外消耗行动�
 
 ## 可选独立领袖
 
-“杨广·通济四海”包含在六个 Mod 的完整安装包中，也提供单独安装包 `YangGuangRework/dist/YangGuangRework-0.1.1.zip`；五个便利功能合集不含该领袖。将 `YangGuangRework` 文件夹复制到同一个 Mods 目录，确保直接存在 `Mods/YangGuangRework/YangGuangRework.modinfo`。
+“杨广·通济四海”包含在六个 Mod 的完整安装包中，也提供单独安装包 `YangGuangRework/dist/YangGuangRework-0.1.2.zip`；五个便利功能合集不含该领袖。将 `YangGuangRework` 文件夹复制到同一个 Mods 目录，确保直接存在 `Mods/YangGuangRework/YangGuangRework.modinfo`。
 
 保留并启用原杨广、王朝特性、HD，以及《风云变幻》和“撒哈拉统治者”等所需官方 DLC；这些第三方前置不包含在本压缩包内。新局选择“杨广·通济四海”，原来的杨广仍可选。详细前置及能力见 `YangGuangRework/README.md`。

@@ -26,7 +26,7 @@
 | 建造者自动作业 | `BuilderAuto/content/BuilderAuto.modinfo` | 0.2.1 |
 | 巨作一键整理 | `AutoTheme/content/AutoTheme.modinfo` | 0.2.0 |
 | 沿途自动铺铁路 | `RailAuto/content/RailAuto.modinfo` | 0.1.1 |
-| 杨广·通济四海（独立领袖） | `YangGuangRework/content/YangGuangRework.modinfo` | 0.1.1 |
+| 杨广·通济四海（独立领袖） | `YangGuangRework/content/YangGuangRework.modinfo` | 0.1.2 |
 
 每个目录还包含封面 PNG、中文/英文 BBCode 说明、真实截图待拍清单和元数据。封面来自几何图形与文字绘制，没有伪造游戏截图。
 

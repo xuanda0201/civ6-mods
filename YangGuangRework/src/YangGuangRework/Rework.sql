@@ -52,12 +52,36 @@ INSERT OR IGNORE INTO TraitModifiers(TraitType,ModifierId)
  WHERE TraitType IN ('TRAIT_PHANTA_DYNASTY_SUI','TRAIT_LEADER_KUBLAI',
                      'TRAIT_LEADER_CLEOPATRA_ALT');
 
--- Copy Qin construction modifiers only, not Qin leader/guest/elite-soldier traits.
--- Unlocks are already supplied by Yang Guang/Sui; do not grant the same reward twice.
+-- Retain only the four completion Builders from Qin construction. Production
+-- below belongs to this leader; no Qin Culture Bomb triggers are assigned.
 INSERT OR IGNORE INTO TraitModifiers(TraitType,ModifierId)
  SELECT 'TRAIT_XGYG_REWORK',ModifierId FROM TraitModifiers
  WHERE TraitType='TRAIT_PHANTA_DYNASTY_QIN'
- AND ModifierId NOT IN ('MODFEAT_PHANTA_DYNASTY_QIN_UNLOCK_CANAL','MODFEAT_PHANTA_DYNASTY_QIN_UNLOCK_DAM');
+ AND ModifierId IN ('MODFEAT_PHANTA_DYNASTY_QIN_BUILDER_ENCAMPMENT',
+                    'MODFEAT_PHANTA_DYNASTY_QIN_BUILDER_AQUEDUCT',
+                    'MODFEAT_PHANTA_DYNASTY_QIN_BUILDER_CANAL',
+                    'MODFEAT_PHANTA_DYNASTY_QIN_BUILDER_DAM');
+
+-- Independent +50% district bonuses. Never edit the shared source modifiers.
+INSERT INTO TraitModifiers(TraitType,ModifierId) VALUES
+ ('TRAIT_XGYG_REWORK','XGYG_PRODUCTION_ENCAMPMENT'),
+ ('TRAIT_XGYG_REWORK','XGYG_PRODUCTION_AQUEDUCT'),
+ ('TRAIT_XGYG_REWORK','XGYG_PRODUCTION_CANAL'),
+ ('TRAIT_XGYG_REWORK','XGYG_PRODUCTION_DAM');
+INSERT INTO Modifiers(ModifierId,ModifierType) VALUES
+ ('XGYG_PRODUCTION_ENCAMPMENT','MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'),
+ ('XGYG_PRODUCTION_AQUEDUCT','MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'),
+ ('XGYG_PRODUCTION_CANAL','MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION'),
+ ('XGYG_PRODUCTION_DAM','MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION');
+INSERT INTO ModifierArguments(ModifierId,Name,Value) VALUES
+ ('XGYG_PRODUCTION_ENCAMPMENT','DistrictType','DISTRICT_ENCAMPMENT'),
+ ('XGYG_PRODUCTION_ENCAMPMENT','Amount',50),
+ ('XGYG_PRODUCTION_AQUEDUCT','DistrictType','DISTRICT_AQUEDUCT'),
+ ('XGYG_PRODUCTION_AQUEDUCT','Amount',50),
+ ('XGYG_PRODUCTION_CANAL','DistrictType','DISTRICT_CANAL'),
+ ('XGYG_PRODUCTION_CANAL','Amount',50),
+ ('XGYG_PRODUCTION_DAM','DistrictType','DISTRICT_DAM'),
+ ('XGYG_PRODUCTION_DAM','Amount',50);
 
 -- Four-way intercourse: foreign incoming routes, land/sea/mixed alike.
 INSERT INTO TraitModifiers(TraitType,ModifierId) VALUES
