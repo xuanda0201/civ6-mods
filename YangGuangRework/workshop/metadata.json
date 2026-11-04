@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "YangGuangRework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "杨广·通济四海 / Yang Guang: Four Seas [Preview]",
   "author": "xuanda0201",
   "visibility": "private",
@@ -27,7 +27,7 @@
     "gameVersion": null,
     "dlc": [],
     "hdVersion": null,
-    "notes": "Syntax and temporary Lua simulation only; no real-game verification."
+    "notes": "Temporary upstream SQL and Lua simulation; consolidated ability and HD identity bridge checked. No real-game verification."
   },
   "metadataNote": "Preparation manifest only, not a Steam Uploader import file. contentPath is relative to the upload-kit item folder; repositorySourcePath is relative to this repository workshop folder.",
   "cover": {

@@ -8,16 +8,16 @@
       <Text>Yang Guang: Four Seas</Text>
     </Row>
     <Row Tag="LOC_TRAIT_XGYG_NAME" Language="zh_Hans_CN">
-      <Text>通济四海</Text>
+      <Text>隋朝--通济四海</Text>
     </Row>
     <Row Tag="LOC_TRAIT_XGYG_NAME" Language="en_US">
-      <Text>The Four Seas Connected</Text>
+      <Text>Sui Dynasty -- The Four Seas Connected</Text>
     </Row>
     <Row Tag="LOC_TRAIT_XGYG_DESCRIPTION" Language="zh_Hans_CN">
-      <Text>首都获得+2人口和免费粮仓；保留最多两次的大举迁都项目，工程科技解锁运河和堤坝。不消耗人口瞬建运河或奇观。[NEWLINE]保留隋朝运河大业内贸收益、运河商路容量及免费商人，获得秦国法家改革的军营与水利建设加成、建成奖励和秦长城。获得当前HD版本的中统建元与哈庇的降临，不获得横扫六合、客卿或秦锐士。[NEWLINE]四方通衢：其他文明通往本方城市的每条国际商路，为目的城市提供+2金币、+1文化，不区分陆路或海路。[NEWLINE]特色单位：府兵、骁果、中世纪五牙战舰。不具备仓廪建造资格。</Text>
+      <Text>营都兴业：首都+2 [ICON_Citizen] 人口并获得免费粮仓；可在拥有运河的城市开展“大举迁都”，最多两次。[NEWLINE]开渠通漕：研究“工程”后解锁运河和堤坝。建造军营、{LOC_DISTRICT_AQUEDUCT_NAME}、运河和堤坝时+100% [ICON_Production] 生产力，建成后获得一名建造者并触发文化炸弹；建成运河另获+1 [ICON_TradeRoute] 商路容量和一名商人。[NEWLINE]舟楫相望：国内商路+2 [ICON_Food] 食物、+2 [ICON_Production] 生产力、+2 [ICON_Gold] 金币，目的城市每座水利区域或仓廪再提供同等收益。外国通往本方城市的每条商路，为目的城市提供+2 [ICON_Gold] 金币、+1 [ICON_Culture] 文化，陆海均适用。[NEWLINE]泽润九州：泛滥平原上的改良设施+1 [ICON_Culture] 文化；境内泛滥平原为相邻单元格提供+1魅力。城市每座位于惊艳单元格的{LOC_DISTRICT_AQUEDUCT_NAME}和堤坝+10%余粮。[NEWLINE]万国来朝：占领其他主要文明的原始 [ICON_Capital] 首都时，获得该文明的特色能力。</Text>
     </Row>
     <Row Tag="LOC_TRAIT_XGYG_DESCRIPTION" Language="en_US">
-      <Text>Capital gains +2 Population and a free Granary. Retains Move Capital (twice) and Engineering unlocks for Canals/Dams. No population rush for canals or wonders. Retains Sui trade bonuses; gains Qin district construction bonuses and Qin Great Wall, plus current HD Kublai and Ptolemaic Cleopatra leader traits. No Qin leader trait, Retainers or Ruishi. Foreign incoming trade routes provide the destination city +2 Gold and +1 Culture, on land or sea. Unique units: Fubing, Xiaoguo and medieval Wuya Warship. Cannot build Canglin.</Text>
+      <Text>Imperial Seat: The Capital gains +2 Population and a free Granary. May relocate the Capital to a city with a Canal, up to twice.[NEWLINE]Grand Works: Engineering unlocks Canals and Dams. +100% Production toward Encampments, {LOC_DISTRICT_AQUEDUCT_NAME}, Canals and Dams; completing one grants a Builder and triggers a Culture Bomb. Each completed Canal also grants +1 Trade Route capacity and a Trader.[NEWLINE]Flourishing Waterways: Domestic routes gain +2 Food, +2 Production and +2 Gold, plus the same yields per hydraulic district or Canglin in the destination. Foreign incoming routes grant the destination +2 Gold and +1 Culture, by land or sea.[NEWLINE]Fertile Realm: Improved Floodplains gain +1 Culture. Owned Floodplains provide +1 Appeal to adjacent tiles. Each {LOC_DISTRICT_AQUEDUCT_NAME} or Dam on a Breathtaking tile grants its city +10% Growth.[NEWLINE]Tribute of Nations: Conquering another major civilization’s original Capital grants its civilization ability.</Text>
     </Row>
     <Row Tag="LOC_UNIT_XGYG_WUYA_NAME" Language="zh_Hans_CN">
       <Text>五牙战舰</Text>
@@ -26,16 +26,16 @@
       <Text>Wuya Warship</Text>
     </Row>
     <Row Tag="LOC_UNIT_XGYG_WUYA_DESCRIPTION" Language="zh_Hans_CN">
-      <Text>杨广·通济四海的中世纪特色海军远程单位，取代护卫舰，于雇佣兵市政解锁。基础战斗力、造价、维护费和战略资源要求沿用当前护卫舰。[NEWLINE]楼船水师：位于海岸或己方已建成运河两格内时+5战斗力，两条件不叠加。[NEWLINE]护航朝贡：四格以内的己方商人免遭劫掠，多艘战舰不会叠加。[NEWLINE]预览版使用现成护卫舰模型及图标。</Text>
+      <Text>隋朝中世纪特色海军远程单位，取代护卫舰，“雇佣兵”市政解锁，使用护卫舰的基础数值与资源需求。[NEWLINE]楼船水师：位于海岸地形或己方已建成运河两格以内时+5 [ICON_Strength] 战斗力，条件不叠加。[NEWLINE]护航朝贡：四格以内的己方商人免遭劫掠。</Text>
     </Row>
     <Row Tag="LOC_UNIT_XGYG_WUYA_DESCRIPTION" Language="en_US">
-      <Text>Medieval naval ranged unit unique to Yang Guang: Four Seas, replacing the Frigate. Unlocked at Mercenaries. Inherits current Frigate base stats, costs, upkeep and strategic resource requirements. +5 Strength on Coast or within 2 tiles of a completed friendly Canal; conditions do not stack. Friendly Traders within 4 tiles are protected from plundering. Preview uses existing Frigate art and icons.</Text>
+      <Text>Medieval naval ranged unit unique to Sui, replacing the Frigate. Unlocked at Mercenaries; uses Frigate base stats and resource requirements.[NEWLINE]Tower Fleet: +5 Strength on Coast or within 2 tiles of a completed friendly Canal; conditions do not stack.[NEWLINE]Tributary Convoy: Friendly Traders within 4 tiles are protected from plundering.</Text>
     </Row>
     <Row Tag="LOC_ABILITY_XGYG_WUYA" Language="zh_Hans_CN">
-      <Text>楼船水师：沿海或己方运河两格内+5战斗力。</Text>
+      <Text>位于海岸地形或己方已建成运河两格以内时+5战斗力，条件不叠加。</Text>
     </Row>
     <Row Tag="LOC_ABILITY_XGYG_WUYA" Language="en_US">
-      <Text>Tower Fleet: +5 Strength on Coast or near a completed friendly Canal.</Text>
+      <Text>+5 Strength on Coast or within 2 tiles of a completed friendly Canal; conditions do not stack.</Text>
     </Row>
     <Row Tag="LOC_XGYG_ESCORT_NAME" Language="zh_Hans_CN">
       <Text>护航朝贡</Text>

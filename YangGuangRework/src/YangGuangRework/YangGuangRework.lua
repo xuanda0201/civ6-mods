@@ -17,6 +17,13 @@ end
 local function RefreshPlayer(id)
     local player=Players[id];
     if player==nil then return; end
+    -- HD's Utils.LeaderHasTrait accepts this property as well as LeaderTraits.
+    -- Preserve the conquest event while displaying only our merged ability.
+    local config=PlayerConfigurations[id];
+    if config and config:GetLeaderTypeName()=='LEADER_XGYG' and
+       player:GetProperty('TRAIT_LEADER_KUBLAI_CAPTURED')~=true then
+        player:SetProperty('TRAIT_LEADER_KUBLAI_CAPTURED',true);
+    end
     local ships,traders={},{};
     for _,unit in player:GetUnits():Members() do
         if IsType(unit,SHIP) then ships[#ships+1]=unit;
@@ -61,4 +68,5 @@ Events.UnitRemovedFromMap.Add(Refresh);
 Events.PlayerTurnActivated.Add(Refresh);
 Events.DistrictBuildProgressChanged.Add(Refresh);
 Events.LoadGameViewStateDone.Add(RefreshAll);
+RefreshAll();
 print('[YangGuangRework] Medieval fleet and escort bridge loaded');

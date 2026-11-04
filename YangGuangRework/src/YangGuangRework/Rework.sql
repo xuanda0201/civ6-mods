@@ -40,10 +40,17 @@ INSERT INTO TraitModifiers(TraitType,ModifierId)
  SELECT 'TRAIT_XGYG_REWORK',ModifierId FROM TraitModifiers
  WHERE TraitType='TRAIT_LEADER_PHANTA_YANG_GUANG';
 INSERT INTO LeaderTraits(LeaderType,TraitType) VALUES
- ('LEADER_XGYG','TRAIT_XGYG_REWORK'),('LEADER_XGYG','TRAIT_PHANTA_DYNASTY_SUI'),
+ ('LEADER_XGYG','TRAIT_XGYG_REWORK'),
  ('LEADER_XGYG','TRAIT_UNIT_PHANTA_FUBING'),('LEADER_XGYG','TRAIT_UNIT_PHANTA_XIAOGUO'),
- ('LEADER_XGYG','TRAIT_LEADER_KUBLAI'),('LEADER_XGYG','TRAIT_LEADER_CLEOPATRA_ALT'),
- ('LEADER_XGYG','TRAIT_IMPROVEMENT_PHANTA_GREAT_WALL_QIN'),('LEADER_XGYG','TRAIT_XGYG_WUYA');
+ ('LEADER_XGYG','TRAIT_XGYG_WUYA');
+
+-- One displayed leader ability. Reuse the installed rules under our own trait,
+-- keeping all source traits and their other leaders untouched. HD's scripted
+-- Kublai check is bridged through its supported captured-trait player property.
+INSERT OR IGNORE INTO TraitModifiers(TraitType,ModifierId)
+ SELECT 'TRAIT_XGYG_REWORK',ModifierId FROM TraitModifiers
+ WHERE TraitType IN ('TRAIT_PHANTA_DYNASTY_SUI','TRAIT_LEADER_KUBLAI',
+                     'TRAIT_LEADER_CLEOPATRA_ALT');
 
 -- Copy Qin construction modifiers only, not Qin leader/guest/elite-soldier traits.
 -- Unlocks are already supplied by Yang Guang/Sui; do not grant the same reward twice.
