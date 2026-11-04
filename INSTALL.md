@@ -1,10 +1,10 @@
 # Steam 版文明 6：本地安装
 
-这五个 Mod 可以作为本地模组使用，无需发布或订阅创意工坊。
+本项目的 Mod 可以作为本地模组使用，无需发布或订阅创意工坊；独立领袖仍需要安装并启用前置模组和 DLC。
 
 ## 1. 下载并解压
 
-下载 [合集安装包](bundles/civ6-mods-preview.zip)。如果是在 GitHub 文件页面，点击 Download raw / 下载原始文件。
+下载 [完整安装包（六个 Mod）](bundles/civ6-mods-complete.zip)，包含以下五个便利功能，以及独立领袖 `YangGuangRework`。如果只需要便利功能，可下载 [五个便利功能合集](bundles/civ6-mods-preview.zip)。如果是在 GitHub 文件页面，点击 Download raw / 下载原始文件。
 
 解压后包含五个可安装目录：
 
@@ -85,4 +85,6 @@ RailAuto 要求《风云变幻》规则集；沿途施工不额外消耗行动�
 
 ## 可选独立领袖
 
-“杨广·通济四海”提供单独安装包 `YangGuangRework/dist/YangGuangRework-0.1.0.zip`，不包含在上述五个便利功能的合集包中。解压后复制 `YangGuangRework` 文件夹到同一个 Mods 目录；保留并启用原杨广、王朝特性、HD，以及所需官方 DLC。新局选择“杨广·通济四海”，原来的杨广仍可选。详细前置及能力见该项目 README。
+“杨广·通济四海”包含在六个 Mod 的完整安装包中，也提供单独安装包 `YangGuangRework/dist/YangGuangRework-0.1.0.zip`；五个便利功能合集不含该领袖。将 `YangGuangRework` 文件夹复制到同一个 Mods 目录，确保直接存在 `Mods/YangGuangRework/YangGuangRework.modinfo`。
+
+保留并启用原杨广、王朝特性、HD，以及《风云变幻》和“撒哈拉统治者”等所需官方 DLC；这些第三方前置不包含在本压缩包内。新局选择“杨广·通济四海”，原来的杨广仍可选。详细前置及能力见 `YangGuangRework/README.md`。

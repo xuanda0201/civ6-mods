@@ -4,7 +4,7 @@
 
 工坊上传：[Windows 上传准备包](bundles/steam-workshop-upload-kit.zip) · [逐步上传说明](WORKSHOP.md)。材料已准备，尚未上传或公开工坊条目。
 
-直接试玩：[下载合集安装包](bundles/civ6-mods-preview.zip) · [Steam 版安装步骤](INSTALL.md)。当前均为尚未实机验证的预览版。
+直接试玩：[下载全部六个 Mod](bundles/civ6-mods-complete.zip) · [仅五个便利功能](bundles/civ6-mods-preview.zip) · [Steam 版安装步骤](INSTALL.md)。当前均为尚未实机验证的预览版。
 
 | Mod | 功能 | 说明 | 安装包 |
 | --- | --- | --- | --- |
